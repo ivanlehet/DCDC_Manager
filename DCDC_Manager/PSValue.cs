@@ -5,10 +5,16 @@ using System.Text;
 
 namespace DCDC_Manager
 {
-    public abstract class PSValue<T> : WatchDog
+    public class PSValue<T> : WatchDog
     {
         private T _value;
         private double _timeStamp;
+
+        public PSValue()
+        {
+
+        }
+
 
         public T Value
         {

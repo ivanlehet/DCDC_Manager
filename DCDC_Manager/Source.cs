@@ -19,6 +19,7 @@ namespace DCDC_Manager
         private CommonProperties _details;
         private bool _selected;
         private SourceType _type;
+        private SourceStatus _status;
 
         public CommonProperties Details
         {

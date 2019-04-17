@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO.Ports;
 using DCDC_Manager;
 
 namespace DCDC_Manager
@@ -11,55 +12,73 @@ namespace DCDC_Manager
         private CommonProperties _details;
         private bool _selected;
         private SourceType _type;
-        
+        private SourceStatus _status;
+
         public Battery()
         {
-            throw new System.NotImplementedException();
+            
         }
 
-        public Battery(Battery battery)
-        {
-            throw new System.NotImplementedException();
-        }
 
-        public Battery(Battery battery, System.IO.Ports.SerialPort port)
+        public Battery(Source battery, SerialPort port = null)
         {
-            throw new System.NotImplementedException();
+
+            this.Details = battery.Details;
+            this.IsAutoUpdate = battery.IsAutoUpdate;
+            this.IsSelected = battery.IsSelected;
+            this.ReadyToUpdate = battery.ReadyToUpdate;
+            this.Type = SourceType.Battery;
+            this.Status = battery.Status;
+            this.UpdatePeriod = battery.UpdatePeriod;
+
+            if (port != null)
+            {
+                this.Port = port;
+            }
+            
+                        
         }
 
         public CommonProperties Details
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._details;
             }
 
             set
             {
+                this._details = value;
             }
         }
+
 
         public PSValue<bool> IsSelected
         {
             get
             {
-                throw new System.NotImplementedException();
+                PSValue<bool> tmp = new PSValue<bool>();
+                tmp.Value = _selected;
+                return tmp;
             }
 
             set
             {
+                this._selected = value.Value;
             }
+
         }
 
         public SourceType Type
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._type;
             }
 
             set
             {
+                this._type = SourceType.Battery;
             }
         }
 
@@ -67,11 +86,14 @@ namespace DCDC_Manager
         {
             get
             {
-                throw new System.NotImplementedException();
+                PSValue<SourceStatus> tmp = new PSValue<SourceStatus>();
+                tmp.Value = this._status;
+                return tmp;
             }
 
             set
             {
+                this._status = value.Value;
             }
         }
 
