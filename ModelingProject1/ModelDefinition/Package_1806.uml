@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1ad18009-b1b9-44b6-b239-5c6cb9c90c53"
+  name="PS_Gui" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="9e228a85-5369-4f4c-bbf0-20560f666a08"
+        name="CommonProp"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="12cf3c0d-50d9-4dca-b1ef-d1c9ebdc67c1"
+            name="_voltage"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="1a3c247e-249f-4a52-b374-dae2ec079509"
+                LastKnownName="double"
+                LastKnownLocation="Package_1806.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9c2fb730-e68b-4058-9880-39f3d1b0ba09"
+            name="_current"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="98824694-2023-4d33-a376-265d5c26a260"
+                LastKnownName="float"
+                LastKnownLocation="Package_1806.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="09b48a67-8168-4f7e-ae76-2695c7a11723"
+        name="Panel"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="06bdefea-544b-464e-8d68-3bf17a4e601a"
+            name="_prop"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="9e228a85-5369-4f4c-bbf0-20560f666a08"
+                LastKnownName="CommonProp"
+                LastKnownLocation="Package_1806.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="851e9fe4-26ea-4945-8ce2-7563edc702c2"
+            name="Operation1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="98824694-2023-4d33-a376-265d5c26a260"
+        name="float" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="1a3c247e-249f-4a52-b374-dae2ec079509"
+        name="double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="673f0d0c-a626-448a-a179-6845b4fbdda3"
+        name="(none" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9853df5c-edd9-46b2-b186-8c4c2d710eba"
+        name="Output"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="34848b15-8079-4d66-b86d-101cd31c7a7d"
+            name="_prop"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="9e228a85-5369-4f4c-bbf0-20560f666a08"
+                LastKnownName="CommonProp"
+                LastKnownLocation="Package_1806.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1c6a521d-deb4-45b2-83af-c5ac35f8a560"
+            name=" _panelList"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b9ed5989-d258-4d94-a951-2ce585ce8431"
+                LastKnownName="List&lt;Panel&gt;"
+                LastKnownLocation="Package_1806.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6ec0b8c1-98de-4f38-b87d-143a8170b01f"
+            name="addPanel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bbcdc79e-c92d-4e22-a205-c9d546f1f247"
+        name="Graph"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b9ed5989-d258-4d94-a951-2ce585ce8431"
+        name="List&lt;Panel&gt;" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

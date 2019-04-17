@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ecbebd36-a0e7-47bf-81a4-6225e400074b" name="UMLClassDiagram1" linkedPackageId="429ec17d-c72d-469a-b058-2a39eb138b29" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e1f21abe-eb29-4d2d-8eb3-9c84ee3e7aa5">
+      <profileInstance Id="f86e4c63-33ce-4b01-a1b3-cfb53d0c3326" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="93725bc2-e261-4d21-80ac-385211fc8dd5">
+      <profileInstance Id="230c4bfe-b222-4bb6-9a83-4e6607aadccf" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="1a0ee1d3-12f4-4a5d-8fbc-168ac5be70fe" name="PS_Gui">
+        <elementDefinition Id="1ad18009-b1b9-44b6-b239-5c6cb9c90c53" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="d8abf8b9-c849-487e-a72d-c9d504ff1b02" name="CommonProp" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9e228a85-5369-4f4c-bbf0-20560f666a08" />
+              <ownedAttributesInternal>
+                <property Id="98c9b0b4-ec66-48de-817f-b5dc50ccd1e3" name="_voltage" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12cf3c0d-50d9-4dca-b1ef-d1c9ebdc67c1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ac33bb29-7855-4190-bbd2-ef693b287e14" LastKnownName="double" />
+                  </type_NamedElement>
+                </property>
+                <property Id="ac0c2e88-2581-4edf-b6c4-00ebb8c376ae" name="_current" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9c2fb730-e68b-4058-9880-39f3d1b0ba09" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01da3fc5-367d-4fbd-8545-12c25bcae55c" LastKnownName="float" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="8ae691fc-a26e-4796-945a-a78b0322c621" name="Panel" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="09b48a67-8168-4f7e-ae76-2695c7a11723" />
+              <ownedAttributes>
+                <property Id="fdf8c4ae-4924-4338-a479-dd5a4afaf57c" name="_prop" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="06bdefea-544b-464e-8d68-3bf17a4e601a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dde428e3-1891-4a01-bbaf-6755763fe43c" LastKnownName="CommonProp" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributes>
+              <ownedOperations>
+                <operation Id="24519a82-86fd-47b6-ba26-f101d0f3eac6" name="Operation1" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="851e9fe4-26ea-4945-8ce2-7563edc702c2" />
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="7c9ed875-94c7-43c2-b1d9-16569603a225" name="Output" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9853df5c-edd9-46b2-b186-8c4c2d710eba" />
+              <ownedAttributesInternal>
+                <property Id="c0a6f19b-f276-478b-a625-07e594cac068" name="_prop" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="34848b15-8079-4d66-b86d-101cd31c7a7d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c5552495-385e-44db-9d0a-f33f69fc52f1" LastKnownName="CommonProp" />
+                  </type_NamedElement>
+                </property>
+                <property Id="25fbb98d-a693-44ab-9ea5-d43120b74b67" name=" _panelList" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1c6a521d-deb4-45b2-83af-c5ac35f8a560" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7dfebc57-d072-4719-a06e-bd867bd677ee" LastKnownName="List&lt;Panel&gt;" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="34e39b39-910c-49fc-80c2-ac4dea66840d" name="addPanel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6ec0b8c1-98de-4f38-b87d-143a8170b01f" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3ec15539-23b6-45ba-bfaa-11a1fbfce3da" name="Graph" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="bbcdc79e-c92d-4e22-a205-c9d546f1f247" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="ac33bb29-7855-4190-bbd2-ef693b287e14" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="1a3c247e-249f-4a52-b374-dae2ec079509" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="01da3fc5-367d-4fbd-8545-12c25bcae55c" name="float" isAbstract="false" isLeaf="false" cachedFullName="float">
+        <elementDefinition Id="98824694-2023-4d33-a376-265d5c26a260" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c5552495-385e-44db-9d0a-f33f69fc52f1" name="CommonProp" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::PS_Gui::CommonProp">
+        <elementDefinition Id="9e228a85-5369-4f4c-bbf0-20560f666a08" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7dfebc57-d072-4719-a06e-bd867bd677ee" name="List&lt;Panel&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Panel&gt;">
+        <elementDefinition Id="b9ed5989-d258-4d94-a951-2ce585ce8431" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dde428e3-1891-4a01-bbaf-6755763fe43c" name="CommonProp" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::PS_Gui::CommonProp">
+        <elementDefinition Id="9e228a85-5369-4f4c-bbf0-20560f666a08" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="429ec17d-c72d-469a-b058-2a39eb138b29" name="ModelingProject1">
+    <elementDefinition Id="9afbcc95-c20e-4e50-b651-dcfcea98ad75" />
+  </package>
+</logicalClassDesignerModel>

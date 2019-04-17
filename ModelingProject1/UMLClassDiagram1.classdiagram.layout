@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.375, 8.5" name="UMLClassDiagram1">
+  <logicalClassDesignerModelMoniker Id="ecbebd36-a0e7-47bf-81a4-6225e400074b" />
+  <nestedChildShapes>
+    <packageShape Id="d7e04370-7265-4b59-b5c5-0da73dfe0ffa" absoluteBounds="1.375, 0.625, 9.75, 5.25" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="1a0ee1d3-12f4-4a5d-8fbc-168ac5be70fe" LastKnownName="PS_Gui" />
+      <nestedChildShapes>
+        <classShape Id="75535606-48ea-4109-a186-e8bce9574b1f" absoluteBounds="2.25, 1.625, 2.75, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+          <classMoniker Id="d8abf8b9-c849-487e-a72d-c9d504ff1b02" LastKnownName="CommonProp" />
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="d12c4650-1d4c-4025-85c5-82c0989fa432" absoluteBounds="2.265, 2.0150000000000006, 2.7199999999999998, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="f81f2ce2-c715-461f-8df0-fee9c8fa5abe" absoluteBounds="2.265, 2.546484357615312, 2.7199999999999998, 0.20117186754941951" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+        <interfaceShape Id="809ee20f-e349-4215-ab6a-c977f1800dac" absoluteBounds="5.5, 1.625, 1.5, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+          <interfaceMoniker Id="8ae691fc-a26e-4796-945a-a78b0322c621" LastKnownName="Panel" />
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="b879c638-9eed-433a-95db-a967e451b108" absoluteBounds="5.515, 2.015, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="882aedd4-22c3-4818-a18a-1bd14fd04504" absoluteBounds="5.515, 2.3863281125823654, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </interfaceShape>
+        <classShape Id="cdd6a977-6af5-4c27-a61d-0310d37bbde3" absoluteBounds="2.25, 3, 1.375, 1.3828124701976776" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+          <classMoniker Id="7c9ed875-94c7-43c2-b1d9-16569603a225" LastKnownName="Output" />
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="ca315c18-d48d-476d-86ce-dc55c31d0b51" absoluteBounds="2.265, 3.3899999999999997, 1.3450000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="73da11a3-2def-47a9-abc3-94ab049208bb" absoluteBounds="2.265, 3.921484357615312, 1.3450000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+        <classShape Id="7d1a975e-96e5-47b4-bb67-1cd6dc2e86d6" absoluteBounds="6.25, 2.875, 1.25, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+          <classMoniker Id="3ec15539-23b6-45ba-bfaa-11a1fbfce3da" LastKnownName="Graph" />
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="ee014394-c603-4b7e-9ec1-ba5a37a131de" absoluteBounds="6.265, 3.2649999999999997, 1.2200000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="0b56b198-f0da-4845-8fab-42fbd92c830d" absoluteBounds="6.265, 3.4761718675494198, 1.2200000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+      </nestedChildShapes>
+    </packageShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
