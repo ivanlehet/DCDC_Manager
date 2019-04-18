@@ -9,17 +9,17 @@ namespace DCDC_Manager
 {
     public class Battery : Source
     {
-        public Battery()
-        {
-            
-        }
+        public Battery() : base(SourceType.Battery) { }
 
-        public Battery(Source battery, ref SerialPort port) : base(battery, ref port) { }
+        public Battery(Source battery) : base(battery,SourceType.Battery) {   }
+   
+
+        public Battery(Source battery, ref SerialPort port) : base(battery, ref port,SourceType.Battery) {  }
      
 
               
 
-        public SourceType Type
+        public override SourceType Type
         {
             get
             {

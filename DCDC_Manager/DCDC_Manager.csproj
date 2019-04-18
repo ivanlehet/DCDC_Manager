@@ -76,7 +76,6 @@
     <Compile Include="IPanel.cs" />
     <Compile Include="ISource.cs" />
     <Compile Include="IWatchDog.cs" />
-    <Compile Include="Line.cs" />
     <Compile Include="LinePower.cs" />
     <Compile Include="OutputContainer.cs" />
     <Compile Include="outputInfoPanel.cs">
@@ -89,7 +88,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PSValue.cs" />
-    <Compile Include="SelectedSource.cs" />
+    <Compile Include="SourceType.cs" />
     <Compile Include="Source.cs" />
     <Compile Include="WatchDog.cs" />
     <Compile Include="WiFi.cs" />

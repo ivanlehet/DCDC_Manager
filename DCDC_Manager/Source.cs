@@ -15,29 +15,52 @@ namespace DCDC_Manager
     /// CommonProperties
     /// WatchDog
     /// </remarks>
-    public abstract class Source : WatchDog, ISource
+    public abstract class Source : Output, ISource
     {
         protected CommonProperties _details;
         protected PSValue<bool> _selected;
         protected SourceType _type;
         protected PSValue<SourceStatus> _status;
+        protected int _batteryId;
+        protected int _lineId;
+        protected int _solarId;
 
         protected Source() { }
         protected Source(Source source)
         {
             fill(source);
+            updateSourceCounter(source.Type);
         }
+
+        protected virtual void updateSourceCounter(SourceType type)
+        {
+            switch (type)
+            {
+                case SourceType.Battery:
+                    this._batteryId++;
+                    break;
+                case SourceType.Line:
+                    this._lineId++;
+                    break;
+                case SourceType.Solar:
+                    this._solarId++;
+                    break;
+                
+                  
+            }
+        }
+
         public Source(SourceType type)
         {
             this._type = type;
         }
         protected Source(Source source, ref SerialPort port)
         {
-            if (source!=null)
+            if (source != null)
             {
                 fill(source);
             }
-            
+
             if (port != null)
             {
                 this.Port = port;
@@ -49,7 +72,7 @@ namespace DCDC_Manager
             this._type = type;
         }
 
-         void fill(Source source)
+        void fill(Source source)
         {
             if (source != null)
             {
@@ -65,20 +88,34 @@ namespace DCDC_Manager
             }
         }
 
-       protected Source(Source source, ref SerialPort port, SourceType type)
+        protected Source(Source source, ref SerialPort port, SourceType type)
         {
-            if(source != null)
+            if (source != null)
             {
                 fill(source);
             }
 
-          
-                this.Port = port;
+
+            this.Port = port;
 
 
             this._type = type;
         }
 
+        /// <summary>
+        /// Holds ID of the current object in collection
+        /// </summary>
+        public virtual int ID
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
         public CommonProperties Details
         {
             get
@@ -135,11 +172,12 @@ namespace DCDC_Manager
                 this._type = value;
             }
         }
-        public virtual bool isValidStatus(SourceStatus status) {
+        public virtual bool isValidStatus(SourceStatus status)
+        {
             return (status == SourceStatus.Charging || status == SourceStatus.NotPresent || status == SourceStatus.Ready || status == SourceStatus.Sourcing) ? true : false;
 
         }
-      
+
 
         public virtual PSValue<SourceStatus> Status
         {
@@ -148,11 +186,11 @@ namespace DCDC_Manager
                 return this._status;
             }
 
-            set { this._status = (isValidStatus(value.Value))?value:this._status; }
+            set { this._status = (isValidStatus(value.Value)) ? value : this._status; }
         }
 
 
-    public override void read()
+        public override void read()
         {
             throw new System.NotImplementedException();
         }
@@ -171,5 +209,10 @@ namespace DCDC_Manager
         {
             throw new System.NotImplementedException();
         }
+
+
+
+
+
     }
 }

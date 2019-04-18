@@ -10,8 +10,8 @@ namespace DCDC_Manager
     /// </summary>
     public class PowerSupply : WatchDog 
     {
-        private List<Output> _output;
-        private List<Source> _source;
+        private List<Output> _outputs;
+        private List<Source> _sources;
         private WiFi _network;
         private List<PanelContainer> _panelContainer;
 
@@ -23,7 +23,7 @@ namespace DCDC_Manager
         /// <summary>
         /// List of outputs
         /// </summary>
-        public List<Output> Output
+        public List<Output> Outputs
         {
             get
             {
@@ -38,7 +38,7 @@ namespace DCDC_Manager
         /// <summary>
         /// List of power sources
         /// </summary>
-        public List<Source> Source
+        public List<Source> Sources
         {
             get
             {
