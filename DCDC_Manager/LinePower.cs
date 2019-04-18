@@ -40,7 +40,11 @@ namespace DCDC_Manager
 
 
 
-        public override PSValue<SourceStatus> Status { get => base.Status; set => base.Status = (isValidStatus(value.Value)) ? value : this._status; }
+        public override PSValue<SourceStatus> Status
+        {
+            get { return base.Status; }
+            set { base.Status = (isValidStatus(value.Value)) ? value : this._status; }
+        }
 
 
         public override void read()
