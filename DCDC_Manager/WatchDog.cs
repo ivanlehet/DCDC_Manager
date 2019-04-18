@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.IO.Ports;
+using System.Timers;
 namespace DCDC_Manager
 {
     /// <summary>
@@ -10,23 +11,30 @@ namespace DCDC_Manager
     /// </summary>
     abstract public class WatchDog
     {
-        private System.Timers.Timer _timer;
-        private bool _autoUpdate;
-        private System.IO.Ports.SerialPort _port;
+        private Timer _timer = new Timer(1000);
+        private bool _autoUpdate = false;
+        private SerialPort _port;
         private bool _readyToUpdate;
 
         public bool IsAutoUpdate
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._autoUpdate;  
             }
 
             set
             {
+                this._autoUpdate = value;
+
             }
         }
 
+        public Timer WatchDogTimer
+        {
+            get { return this._timer; }
+            set { this._timer = value; }
+        }
         /// <summary>
         /// Update period in milliseconds
         /// </summary>
@@ -42,15 +50,16 @@ namespace DCDC_Manager
             }
         }
 
-        public System.IO.Ports.SerialPort Port
+        public SerialPort Port
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._port;
             }
 
             set
             {
+                this._port = value;
             }
         }
 

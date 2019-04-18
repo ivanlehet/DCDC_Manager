@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
   <Class Name="DCDC_Manager.CommonProperties" Collapsed="true">
     <Position X="18.75" Y="0.5" Width="1.5" />
@@ -45,7 +45,7 @@
   <Class Name="DCDC_Manager.Source">
     <Position X="1.5" Y="4.75" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AEAAAAAEAABBEAQAACAAAACAAAAAAAGCAQAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAEAAABEAQAACAAAACAAAAAAAGCAQAAAAAAAAA=</HashCode>
       <FileName>Source.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -53,7 +53,7 @@
   <Class Name="DCDC_Manager.Battery">
     <Position X="8.25" Y="4.75" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AEAAAAAEAAABEAQAACAAAACAAAAAAAGCAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAABEAQAACAAAACAAAAAAAGCAQAAAAAAAAA=</HashCode>
       <FileName>Battery.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -61,7 +61,7 @@
   <Class Name="DCDC_Manager.LinePower">
     <Position X="11.75" Y="4.75" Width="3" />
     <TypeIdentifier>
-      <HashCode>AEAAAAAEAAABEAQAACAAAACAAAAAAACCAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAABEAQAACAAAACAAAAAAACCAQAAAAAAAAA=</HashCode>
       <FileName>LinePower.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

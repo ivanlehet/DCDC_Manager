@@ -5,17 +5,15 @@ using System.Text;
 
 namespace DCDC_Manager
 {
-    public class LinePower : WatchDog, ISource
+    public class LinePower : Source
     {
-        private CommonProperties _details;
-        private bool _isSelected;
-        private SourceType _type;
+ 
 
         public LinePower()
         {
-            throw new System.NotImplementedException();
+            
         }
-
+        
         public LinePower(LinePower line)
         {
             throw new System.NotImplementedException();
@@ -26,53 +24,24 @@ namespace DCDC_Manager
             throw new System.NotImplementedException();
         }
 
-        public  CommonProperties Details
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
-            {
-            }
-        }
 
-        public  PSValue<bool> IsSelected
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
-            {
-            }
-        }
 
         public  SourceType Type
         {
             get
             {
-                throw new System.NotImplementedException();
+                return SourceType.Line;
             }
 
-            set
-            {
-            }
+
         }
 
-        public PSValue<SourceStatus> Status
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
-            {
-            }
-        }
+
+        public override PSValue<SourceStatus> Status { get => base.Status; set => base.Status = (isValidStatus(value.Value)) ? value : this._status; }
+
 
         public override void read()
         {
