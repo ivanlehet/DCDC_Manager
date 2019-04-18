@@ -1,37 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using System.Text;
+using System.IO.Ports;
 
 namespace DCDC_Manager
 {
-    public abstract class PSValue<T> : WatchDog
+    public class PSValue<T> : WatchDog
     {
         private T _value;
-        private double _timeStamp;
+        private double _timeStamp=0.0;
+
+        public PSValue()
+        {
+            this.Port = new SerialPort();
+         
+        }
+
 
         public T Value
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._value;
+
             }
 
             set
             {
+                this._value = value;
             }
         }
 
         public double TimeStamp
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get { return this._timeStamp; }
 
-            set
-            {
-            }
+
+            set { this._timeStamp = value; }
+          
         }
 
         public override void read()

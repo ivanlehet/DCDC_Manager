@@ -9,7 +9,7 @@ namespace DCDC_Manager
     public interface ISource
     {
         CommonProperties Details { get; set; }
-        PSValue<bool> IsSelected { get; set; }
+        bool IsSelected { get; set; }
         SourceType Type { get; set; }
         DCDC_Manager.PSValue<SourceStatus> Status { get; set; }
     }

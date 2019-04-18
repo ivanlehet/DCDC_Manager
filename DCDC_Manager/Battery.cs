@@ -2,78 +2,35 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO.Ports;
 using DCDC_Manager;
 
 namespace DCDC_Manager
 {
-    public class Battery : WatchDog, ISource
+    public class Battery : Source
     {
-        private CommonProperties _details;
-        private bool _selected;
-        private SourceType _type;
-        
         public Battery()
         {
-            throw new System.NotImplementedException();
+            
         }
 
-        public Battery(Battery battery)
-        {
-            throw new System.NotImplementedException();
-        }
+        public Battery(Source battery, ref SerialPort port) : base(battery, ref port) { }
+     
 
-        public Battery(Battery battery, System.IO.Ports.SerialPort port)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public CommonProperties Details
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public PSValue<bool> IsSelected
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
+              
 
         public SourceType Type
         {
             get
             {
-                throw new System.NotImplementedException();
+                return SourceType.Battery;
             }
 
-            set
-            {
-            }
         }
 
-        public PSValue<SourceStatus> Status
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+      
 
-            set
-            {
-            }
-        }
+       
 
         public override void read()
         {
