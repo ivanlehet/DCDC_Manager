@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DCDC_Manager
 {
-    public class CommonProperties
+    public class CommonProperties : WatchDog
     {
         private PSValue<double> _current;
         private PSValue<double> _voltage;
@@ -32,6 +32,26 @@ namespace DCDC_Manager
             set
             {
             }
+        }
+
+        public override String getReadQeuery()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override string getWriteQuery()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void read()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void write()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

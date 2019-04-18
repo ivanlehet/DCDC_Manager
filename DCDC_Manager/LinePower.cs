@@ -11,24 +11,22 @@ namespace DCDC_Manager
 
         public LinePower()
         {
-            
+            this._type = SourceType.Battery;
         }
-        
-        public LinePower(LinePower line)
+
+        public LinePower(LinePower line) : base(line) { }
+
+
+        public LinePower(Source line, System.IO.Ports.SerialPort port)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public LinePower(LinePower line, System.IO.Ports.SerialPort port)
-        {
-            throw new System.NotImplementedException();
+      
         }
 
 
 
 
 
-        public  SourceType Type
+        public override SourceType Type
         {
             get
             {

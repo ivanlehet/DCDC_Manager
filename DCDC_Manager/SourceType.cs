@@ -11,16 +11,20 @@ namespace DCDC_Manager
     public enum SourceType
     {
         /// <summary>
-        /// No source selected
+        /// No SourceType selected
         /// </summary>
         None,
         /// <summary>
-        /// Battery selected
+        /// Represents battery
         /// </summary>
         Battery,
         /// <summary>
-        /// Line selected
+        /// Represents wired power source as ACDC converter or power transformer.
         /// </summary>
-        Line
+        Line,
+        /// <summary>
+        /// Represents solar cell
+        /// </summary>
+        Solar
     }
 }
