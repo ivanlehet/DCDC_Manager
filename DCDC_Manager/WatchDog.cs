@@ -9,23 +9,29 @@ namespace DCDC_Manager
     /// <summary>
     /// Class providing auto update maintenence
     /// </summary>
-    abstract public class WatchDog
+    abstract public class WatchDog : IWatchDog, IReadableProperty
     {
-        private Timer _timer = new Timer(1000);
-        private bool _autoUpdate = false;
-        private SerialPort _port;
-        private bool _readyToUpdate;
+        protected Timer _timer;
+        protected bool _autoUpdate;
+        protected SerialPort _port;
+        protected bool? _readyToUpdate = null;
+
+        protected WatchDog()
+        {
+            this._timer = new Timer(1000);
+            this._timer.Enabled = false;
+        }
 
         public bool IsAutoUpdate
         {
             get
             {
-                return this._autoUpdate;  
+                return this._timer.Enabled;
             }
 
             set
             {
-                this._autoUpdate = value;
+                this._timer.Enabled = value;
 
             }
         }
@@ -35,18 +41,24 @@ namespace DCDC_Manager
             get { return this._timer; }
             set { this._timer = value; }
         }
+
         /// <summary>
         /// Update period in milliseconds
         /// </summary>
-        public int UpdatePeriod
+        public double UpdatePeriod
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._timer.Interval;
             }
 
             set
             {
+                if (value > 0 && value <= double.MaxValue)
+                {
+                    this._timer.Interval = value;
+
+                }
             }
         }
 
@@ -66,24 +78,24 @@ namespace DCDC_Manager
         /// <summary>
         /// Indicates if its possible to update value
         /// </summary>
-        public bool ReadyToUpdate
+        public bool? ReadyToUpdate
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._readyToUpdate;
             }
 
             set
             {
+                this._readyToUpdate = value;
+
             }
         }
 
-        abstract public void read();
-
-        abstract public void write();
-
-        public abstract string getReadQuery();
-
-        public abstract string getWriteQuery();
+        public virtual string getReadQuery()
+        {
+            throw new System.NotImplementedException();
+        }
+        public virtual void read() { }
     }
 }

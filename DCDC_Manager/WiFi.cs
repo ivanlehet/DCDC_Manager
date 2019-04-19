@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DCDC_Manager
 {
-    public class WiFi : WatchDog
+    public class WiFi : WatchDog, IWritableProperty, IReadableProperty
     {
         private String _ssid;
         private String _password;
@@ -65,7 +65,7 @@ namespace DCDC_Manager
             throw new System.NotImplementedException();
         }
 
-        public override void write()
+        public void write()
         {
             throw new System.NotImplementedException();
         }
@@ -75,7 +75,7 @@ namespace DCDC_Manager
             throw new System.NotImplementedException();
         }
 
-        public override string getWriteQuery()
+        public  string getWriteQuery()
         {
             throw new System.NotImplementedException();
         }

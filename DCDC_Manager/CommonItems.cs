@@ -5,20 +5,26 @@ using System.Text;
 
 namespace DCDC_Manager
 {
-    public class CommonProperties : WatchDog
+    public abstract class CommonProperties : WatchDog,IWritableProperty
     {
-        private PSValue<double> _current;
-        private PSValue<double> _voltage;
+        protected PSValue<double> _current;
+        protected PSValue<double> _voltage;
 
+        protected CommonProperties()
+        {
+            this._voltage = new PSValue<double>();
+            this._current = new PSValue<double>();
+        }
         public PSValue<double> Current
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._current;
             }
 
             set
             {
+                this._current = value;
             }
         }
 
@@ -26,32 +32,39 @@ namespace DCDC_Manager
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._voltage;
             }
 
             set
             {
+                this._voltage = value;
             }
         }
 
-        public override String getReadQeuery()
+        new public virtual void write()
         {
-            throw new System.NotImplementedException();
+
         }
 
-        public override string getWriteQuery()
+
+
+        /// <summary>
+        /// Function creating querry string to read current and voltage values from power supply.
+        /// </summary>
+        /// <returns>Function returns query string for current and voltage "@curr@vtg". Query is send with \r\n</returns>
+        public string getReadQuery()
         {
-            throw new System.NotImplementedException();
+
+            return "@" + this.GetType().Name.Substring(0, 3).ToLowerInvariant() + base.getReadQuery();
         }
 
-        public override void read()
-        {
-            throw new System.NotImplementedException();
-        }
+        /// <summary>
+        /// Function creating querry string to write current and voltage values to power supply.
+        /// </summary>
+        /// <returns>Function returns query string for current and voltage "@curr@vtg". Query is send with \r\n</returns>
+        new public virtual string getWriteQuery() { return string.Empty; }
 
-        public override void write()
-        {
-            throw new System.NotImplementedException();
-        }
+
+
     }
 }

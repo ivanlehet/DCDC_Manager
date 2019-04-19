@@ -5,21 +5,33 @@ using System.Text;
 
 namespace DCDC_Manager
 {
-    public class Output : WatchDog
+    public class Output : WatchDog, IWritableProperty, IReadableProperty
     {
-        private CommonProperties _desired;
-        private CommonProperties _real;
-        private bool _enabled;
+        protected DesiredProperties _desired;
+        protected RealProperties _real;
+        protected bool _enabled;
 
-        public CommonProperties Desired
+        public Output()
+        {
+            this._desired = new DesiredProperties();
+            this._real = new RealProperties();
+            _enabled = false;
+        }
+
+
+
+
+        public DesiredProperties Desired
         {
             get
             {
-                throw new System.NotImplementedException();
+
+                return this._desired;
             }
 
             set
             {
+                this._desired = value;
             }
         }
 
@@ -49,12 +61,12 @@ namespace DCDC_Manager
             }
         }
 
-        public override void read()
+        public  void read()
         {
             throw new System.NotImplementedException();
         }
 
-        public override void write()
+        public  void write()
         {
             throw new System.NotImplementedException();
         }
@@ -64,9 +76,9 @@ namespace DCDC_Manager
             throw new System.NotImplementedException();
         }
 
-        public override string getWriteQuery()
+        public  string getWriteQuery()
         {
-            throw new System.NotImplementedException();
+            return string.Empty;
         }
     }
 }

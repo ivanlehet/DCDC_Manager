@@ -64,6 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Battery.cs" />
+    <Compile Include="DesiredProperties.cs" />
+    <Compile Include="ICommonProperties.cs" />
+    <Compile Include="IReadableProperty.cs" />
+    <Compile Include="IWatchDog.cs" />
+    <Compile Include="IWritableProperty.cs" />
+    <Compile Include="RealProperties.cs" />
     <Compile Include="SourceStatus.cs" />
     <Compile Include="CommonItems.cs" />
     <Compile Include="Output.cs" />
@@ -75,7 +81,6 @@
     </Compile>
     <Compile Include="IPanel.cs" />
     <Compile Include="ISource.cs" />
-    <Compile Include="IWatchDog.cs" />
     <Compile Include="LinePower.cs" />
     <Compile Include="OutputContainer.cs" />
     <Compile Include="outputInfoPanel.cs">
