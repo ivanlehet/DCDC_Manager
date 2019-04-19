@@ -5,19 +5,22 @@ using System.Text;
 
 namespace DCDC_Manager
 {
-    public class RealProperties : IReadableProperty
+    public class RealProperties : CommonProperties, IReadableProperty
     {
-         public string getReadQuery()
+        public RealProperties()
+        {
+         
+        }
+
+        public string getReadQuery()
         {
             return string.Empty;
         }
 
-        public  void read()
+        public void read()
         {
 
 
         }
-
-
     }
 }

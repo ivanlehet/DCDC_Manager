@@ -9,13 +9,14 @@ namespace DCDC_Manager
     {
         protected DesiredProperties _desired;
         protected RealProperties _real;
-        protected bool _enabled;
+        protected PSValue<bool> _enabled=new PSValue<bool>();
 
         public Output()
         {
             this._desired = new DesiredProperties();
             this._real = new RealProperties();
-            _enabled = false;
+            this._enabled = new PSValue<bool>();
+            this._enabled.Value = false;
         }
 
 
@@ -37,27 +38,30 @@ namespace DCDC_Manager
 
         /// <summary></summary>
         /// <value></value>
-        public CommonProperties Real
+        public RealProperties Real
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._real;
             }
 
             set
             {
+                this._real = value;
+
             }
         }
 
-        public bool IsEnabled
+        public PSValue<bool> IsEnabled
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._enabled;
             }
 
             set
             {
+                this._enabled = value;
             }
         }
 

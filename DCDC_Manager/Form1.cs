@@ -20,8 +20,8 @@ namespace DCDC_Manager
     {
 
         PowerSupply p = new PowerSupply();
-        
-        
+        RealProperties props = new RealProperties();
+        public  String Voltage;
           
 
         String message;
@@ -33,9 +33,10 @@ namespace DCDC_Manager
 
         public Form1()
         {
-
+         
 
             InitializeComponent();
+            outputPanelContainer1.RealVoltage= Voltage;
             device_serial.NewLine = "\r";
             out1MainChartTitleTb.TextChanged += Out1MainChartTitleTb_TextChanged;
             /*
@@ -368,7 +369,7 @@ namespace DCDC_Manager
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void out2PlotChckBox_CheckedChanged(object sender, EventArgs e)
-        {
+        {/*
             out2MainValuesChart.Visible ^= true;
             out2PlotVtgChckBox.Visible ^= true;
             out2PlotCurrCheckBox.Visible ^= true;
@@ -385,15 +386,16 @@ namespace DCDC_Manager
             }
 
             ResizeOutputPanel(splitContainer8, out2PlotChckBox.Checked);
+            */
         }
-
+      
         /// <summary>
         /// Output 2 Legend checkbox
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void out2PlotLegendChckBox_CheckedChanged(object sender, EventArgs e)
-        {
+        {/*
             if (out2PlotLegendChckBox.Checked)
             {
 
@@ -420,20 +422,21 @@ namespace DCDC_Manager
                 out2MainValuesChart.Series["out2MainChartVoltage"].IsVisibleInLegend = false;
                 out2MainValuesChart.Series["out2MainChartCurrent"].IsVisibleInLegend = false;
             }
+            */
         }
-
+       
         /// <summary>
         /// Output 2 Plot Voltage checkbox
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void out2PlotVtgChckBox_CheckedChanged(object sender, EventArgs e)
-        {
+        {/*
             out2PlotLegendChckBox_CheckedChanged(sender, e);
             if (!out2PlotVtgChckBox.Checked)
             {
                 out2MainValuesChart.Series["out2MainChartVoltage"].Points.Clear();
-            }
+            }*/
         }
 
         /// <summary>
@@ -442,12 +445,13 @@ namespace DCDC_Manager
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void out2PlotCurrCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
+        {/*
             out2PlotLegendChckBox_CheckedChanged(sender, e);
             if (!out2PlotCurrCheckBox.Checked)
             {
                 out2MainValuesChart.Series["out2MainChartCurrent"].Points.Clear();
             }
+            */
         }
 
         #endregion
@@ -460,7 +464,7 @@ namespace DCDC_Manager
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void out3PlotChckBox_CheckedChanged(object sender, EventArgs e)
-        {
+        {/*
             out3MainValuesChart.Visible ^= true;
             out3PlotVtgChckBox.Visible ^= true;
             out3PlotCurrCheckBox.Visible ^= true;
@@ -476,7 +480,7 @@ namespace DCDC_Manager
                 splitContainer9.Panel2MinSize = 63;
             }
             ResizeOutputPanel(splitContainer9, out3PlotChckBox.Checked);
-
+            */
         }
 
         /// <summary>
@@ -485,12 +489,12 @@ namespace DCDC_Manager
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void out3PlotVtgChckBox_CheckedChanged(object sender, EventArgs e)
-        {
+        {/*
             out3PlotLegendChckBox_CheckedChanged(sender, e);
             if (!out3PlotVtgChckBox.Checked)
             {
                 out3MainValuesChart.Series["out3MainChartVoltage"].Points.Clear();
-            }
+            }*/
         }
 
         /// <summary>
@@ -499,12 +503,12 @@ namespace DCDC_Manager
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void out3PlotCurrCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
+        {/*
             out3PlotLegendChckBox_CheckedChanged(sender, e);
             if (!out3PlotCurrCheckBox.Checked)
             {
                 out3MainValuesChart.Series["out3MainChartCurrent"].Points.Clear();
-            }
+            }*/
                 
         }
 
@@ -515,7 +519,7 @@ namespace DCDC_Manager
         /// <param name="e"></param>
         private void out3PlotLegendChckBox_CheckedChanged(object sender, EventArgs e)
         {
-
+            /*
             if (out3PlotLegendChckBox.Checked)
             {
 
@@ -541,7 +545,7 @@ namespace DCDC_Manager
             {
                 out3MainValuesChart.Series["out3MainChartVoltage"].IsVisibleInLegend = false;
                 out3MainValuesChart.Series["out3MainChartCurrent"].IsVisibleInLegend = false;
-            }
+            }*/
         }
         #endregion
 
@@ -578,7 +582,7 @@ namespace DCDC_Manager
 
 
         private void out2MainEnabledChckBox_CheckedChanged(object sender, EventArgs e)
-        {
+        {/*
             out2InfoEnabledChckBox.Checked = out2MainEnabledChckBox.Checked;
             if (out2MainEnabledChckBox.Checked)
             {
@@ -589,17 +593,17 @@ namespace DCDC_Manager
             {
                 out2MainStatusPanel.BackColor = Color.Transparent;
                 out2InfoStatusPanel.BackColor = Color.Transparent;
-            }
+            }*/
         }
 
         private void out2InfoEnabledChckBox_CheckedChanged(object sender, EventArgs e)
         {
-            out2MainEnabledChckBox.Checked = out2InfoEnabledChckBox.Checked;
+            //out2MainEnabledChckBox.Checked = out2InfoEnabledChckBox.Checked;
         }
 
 
         private void out3MainEnabledChckBox_CheckedChanged(object sender, EventArgs e)
-        {
+        {/*
             out3InfoEnabledChckBox.Checked = out3MainEnabledChckBox.Checked;
             if (out3MainEnabledChckBox.Checked)
             {
@@ -610,13 +614,13 @@ namespace DCDC_Manager
             {
                 out3MainStatusPanel.BackColor = Color.Transparent;
                 out3InfoStatusPanel.BackColor = Color.Transparent;
-            }
+            }*/
 
         }
 
         private void out3InfoEnabledChckBox_CheckedChanged(object sender, EventArgs e)
         {
-            out3MainEnabledChckBox.Checked = out3InfoEnabledChckBox.Checked;
+            //out3MainEnabledChckBox.Checked = out3InfoEnabledChckBox.Checked;
         }
 
 
@@ -667,6 +671,14 @@ namespace DCDC_Manager
             battVoltageLbl.Text += " V";
 
             out1MainRealVtgLbl.Text = ComputeSquarePoint(time, 30, 0.2, 17).ToString().Substring(0, 5)+" V";
+
+            Voltage =  out1MainRealVtgLbl.Text;
+            props.Voltage.Value = ComputeSquarePoint(time, 30, 0.2, 17);
+
+            outputPanelContainer1.Real = props;
+
+        //this.outputPanelContainer1.realVoltage.Text = ;
+
             out1InfoRealVtgLbl.Text = out1MainRealVtgLbl.Text;
 
             out1InfoDesVtgLbl.Text = out1MainDesVtgIntNumUpDown.Value+","+out1MainDesVtgDecNumericUpDown.Value+" V";
@@ -719,7 +731,7 @@ namespace DCDC_Manager
                 }
 
             }
-
+            /*
             if (out2PlotChckBox.Checked)
             {
 
@@ -745,7 +757,7 @@ namespace DCDC_Manager
                     out3MainValuesChart.Series[1].Points.AddXY(time, function(time + 10.0) - 5.0); //add values to current line
                 }
             }
-
+            */
 
             if (toolStripMenuItem6.Checked && !String.IsNullOrEmpty(logFileName))
             {
@@ -803,23 +815,25 @@ namespace DCDC_Manager
         }
 
         private void splitContainer8_Resize(object sender, EventArgs e)
-        {
+        {/*
             SplitContainer container = sender as SplitContainer;
             ResizeOutputPanel(container, out2PlotChckBox.Checked);
+            */
         }
 
         private void splitContainer9_Resize(object sender, EventArgs e)
-        {
+        {/*
             SplitContainer container = sender as SplitContainer;
             ResizeOutputPanel(container, out3PlotChckBox.Checked);
+            */
         }
 
         private void Form1_Shown(object sender, EventArgs e)
         {
 
             ResizeOutputPanel(splitContainer7, toolStripMenuItem41.Checked);
-            ResizeOutputPanel(splitContainer8, out2PlotChckBox.Checked);
-            ResizeOutputPanel(splitContainer9, out3PlotChckBox.Checked);
+            //ResizeOutputPanel(splitContainer8, out2PlotChckBox.Checked);
+            //ResizeOutputPanel(splitContainer9, out3PlotChckBox.Checked);
            
      
             

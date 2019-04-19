@@ -10,7 +10,7 @@ namespace DCDC_Manager
         protected PSValue<double> _current;
         protected PSValue<double> _voltage;
 
-        protected CommonProperties()
+        public CommonProperties()
         {
             this._voltage = new PSValue<double>();
             this._current = new PSValue<double>();
@@ -41,9 +41,9 @@ namespace DCDC_Manager
             }
         }
 
-        new public virtual void write()
+        public virtual void write()
         {
-
+            //TODO: implement write to serial
         }
 
 
@@ -52,17 +52,17 @@ namespace DCDC_Manager
         /// Function creating querry string to read current and voltage values from power supply.
         /// </summary>
         /// <returns>Function returns query string for current and voltage "@curr@vtg". Query is send with \r\n</returns>
-        public string getReadQuery()
+        public  string getWriteQuery()
         {
 
-            return "@" + this.GetType().Name.Substring(0, 3).ToLowerInvariant() + base.getReadQuery();
+            return "@" + this.GetType().Name.Substring(0, 3).ToLowerInvariant();
         }
 
         /// <summary>
         /// Function creating querry string to write current and voltage values to power supply.
         /// </summary>
         /// <returns>Function returns query string for current and voltage "@curr@vtg". Query is send with \r\n</returns>
-        new public virtual string getWriteQuery() { return string.Empty; }
+        
 
 
 

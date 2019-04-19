@@ -66,9 +66,16 @@
     <Compile Include="Battery.cs" />
     <Compile Include="DesiredProperties.cs" />
     <Compile Include="ICommonProperties.cs" />
+    <Compile Include="IOutput.cs" />
     <Compile Include="IReadableProperty.cs" />
     <Compile Include="IWatchDog.cs" />
     <Compile Include="IWritableProperty.cs" />
+    <Compile Include="OutputPanelContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutputPanelContainer.Designer.cs">
+      <DependentUpon>OutputPanelContainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="RealProperties.cs" />
     <Compile Include="SourceStatus.cs" />
     <Compile Include="CommonItems.cs" />
@@ -102,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="outputInfoPanel.resx">
       <DependentUpon>outputInfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="outputPanelContainer.resx">
+      <DependentUpon>OutputPanelContainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

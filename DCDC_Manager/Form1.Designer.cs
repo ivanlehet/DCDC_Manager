@@ -29,51 +29,34 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONNECToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -116,7 +99,6 @@
             this.splitContainer13 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.batteryBtn = new System.Windows.Forms.Button();
             this.lineBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.battVoltageProgress = new System.Windows.Forms.ProgressBar();
@@ -127,21 +109,13 @@
             this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.statusStrip3 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel13 = new System.Windows.Forms.ToolStripStatusLabel();
             this.battInfoToolstripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem40 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem45 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem46 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem47 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem48 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem49 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem50 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
-            this.battLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem52 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem53 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem54 = new System.Windows.Forms.ToolStripMenuItem();
@@ -164,8 +138,6 @@
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.tableLayoutPanel47 = new System.Windows.Forms.TableLayoutPanel();
             this.label42 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -173,39 +145,17 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.logfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileNameToolStripMenuItem40 = new System.Windows.Forms.ToolStripMenuItem();
-            this.voltageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.currentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem26 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem27 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem28 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem29 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripMenuItem30 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem31 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem32 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem33 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem34 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem35 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem36 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem37 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem38 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem39 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip2 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.out1VtgToolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
@@ -213,7 +163,6 @@
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.out1CurrToolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.out1MainInfoTsSl = new System.Windows.Forms.ToolStripStatusLabel();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
@@ -243,16 +192,10 @@
             this.label41 = new System.Windows.Forms.Label();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.out1MainChartMenuStrip = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem41 = new System.Windows.Forms.ToolStripMenuItem();
             this.out1FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.out1MainChartSaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.out1MainChartPrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.out1MainChartViewtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -275,56 +218,6 @@
             this.toolStripMenuItem16 = new System.Windows.Forms.ToolStripMenuItem();
             this.out1MainValuesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.splitContainer12 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer8 = new System.Windows.Forms.SplitContainer();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel36 = new System.Windows.Forms.TableLayoutPanel();
-            this.out2MainEnabledChckBox = new System.Windows.Forms.CheckBox();
-            this.out2MainStatusPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
-            this.label28 = new System.Windows.Forms.Label();
-            this.out2MainDesVtgNumUpDown = new System.Windows.Forms.NumericUpDown();
-            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
-            this.progressBar7 = new System.Windows.Forms.ProgressBar();
-            this.out2MainRealVtgLbl = new System.Windows.Forms.Label();
-            this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
-            this.progressBar8 = new System.Windows.Forms.ProgressBar();
-            this.out2MainRealCurrLbl = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.out2MainDesCurrNumUpDown = new System.Windows.Forms.NumericUpDown();
-            this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
-            this.out2PlotCurrCheckBox = new System.Windows.Forms.CheckBox();
-            this.out2PlotChckBox = new System.Windows.Forms.CheckBox();
-            this.out2PlotVtgChckBox = new System.Windows.Forms.CheckBox();
-            this.out2PlotLegendChckBox = new System.Windows.Forms.CheckBox();
-            this.out2MainValuesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.splitContainer9 = new System.Windows.Forms.SplitContainer();
-            this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel37 = new System.Windows.Forms.TableLayoutPanel();
-            this.out3MainEnabledChckBox = new System.Windows.Forms.CheckBox();
-            this.out3MainStatusPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
-            this.label34 = new System.Windows.Forms.Label();
-            this.out3MainDesVtgNumUpDown = new System.Windows.Forms.NumericUpDown();
-            this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
-            this.progressBar9 = new System.Windows.Forms.ProgressBar();
-            this.out3MainRealVtgLbl = new System.Windows.Forms.Label();
-            this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
-            this.progressBar10 = new System.Windows.Forms.ProgressBar();
-            this.out3MainRealCurrLbl = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.out3MainDesCurrNumUpDown = new System.Windows.Forms.NumericUpDown();
-            this.tableLayoutPanel33 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel34 = new System.Windows.Forms.TableLayoutPanel();
-            this.out3PlotCurrCheckBox = new System.Windows.Forms.CheckBox();
-            this.out3PlotChckBox = new System.Windows.Forms.CheckBox();
-            this.out3PlotVtgChckBox = new System.Windows.Forms.CheckBox();
-            this.out3PlotLegendChckBox = new System.Windows.Forms.CheckBox();
-            this.out3MainValuesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.regOutputsMenuStrip = new System.Windows.Forms.MenuStrip();
             this.aLLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oUTPUT1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -395,6 +288,56 @@
             this.toolStripMenuItem24 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem25 = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.batteryBtn = new System.Windows.Forms.Button();
+            this.toolStripStatusLabel13 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem45 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem46 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem47 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem49 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem50 = new System.Windows.Forms.ToolStripMenuItem();
+            this.battLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.logfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fileNameToolStripMenuItem40 = new System.Windows.Forms.ToolStripMenuItem();
+            this.voltageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.currentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem26 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem27 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem28 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem29 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripMenuItem30 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem31 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem32 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem33 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem34 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.out1MainInfoTsSl = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripMenuItem41 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.out1MainChartSaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.out1MainChartPrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.outputPanelContainer1 = new DCDC_Manager.OutputPanelContainer();
             this.menuStrip1.SuspendLayout();
             this.connGb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
@@ -479,36 +422,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.out1MainValuesChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).BeginInit();
             this.splitContainer12.Panel1.SuspendLayout();
-            this.splitContainer12.Panel2.SuspendLayout();
             this.splitContainer12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).BeginInit();
-            this.splitContainer8.Panel1.SuspendLayout();
-            this.splitContainer8.Panel2.SuspendLayout();
-            this.splitContainer8.SuspendLayout();
-            this.tableLayoutPanel22.SuspendLayout();
-            this.tableLayoutPanel36.SuspendLayout();
-            this.tableLayoutPanel24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out2MainDesVtgNumUpDown)).BeginInit();
-            this.tableLayoutPanel25.SuspendLayout();
-            this.tableLayoutPanel26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out2MainDesCurrNumUpDown)).BeginInit();
-            this.tableLayoutPanel27.SuspendLayout();
-            this.tableLayoutPanel28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out2MainValuesChart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer9)).BeginInit();
-            this.splitContainer9.Panel1.SuspendLayout();
-            this.splitContainer9.Panel2.SuspendLayout();
-            this.splitContainer9.SuspendLayout();
-            this.tableLayoutPanel29.SuspendLayout();
-            this.tableLayoutPanel37.SuspendLayout();
-            this.tableLayoutPanel30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out3MainDesVtgNumUpDown)).BeginInit();
-            this.tableLayoutPanel31.SuspendLayout();
-            this.tableLayoutPanel32.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out3MainDesCurrNumUpDown)).BeginInit();
-            this.tableLayoutPanel33.SuspendLayout();
-            this.tableLayoutPanel34.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out3MainValuesChart)).BeginInit();
             this.regOutputsMenuStrip.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
@@ -582,37 +496,10 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 25);
             this.fileToolStripMenuItem.Text = "&File";
             // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
-            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
-            this.newToolStripMenuItem.Text = "&New";
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
-            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
-            this.openToolStripMenuItem.Text = "&Open";
-            // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(173, 6);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
-            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
-            this.saveToolStripMenuItem.Text = "&Save";
             // 
             // saveAsToolStripMenuItem
             // 
@@ -624,23 +511,6 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(173, 6);
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
-            this.printToolStripMenuItem.Text = "&Print";
-            // 
-            // printPreviewToolStripMenuItem
-            // 
-            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
-            this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
-            this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
             // toolStripSeparator2
             // 
@@ -689,33 +559,6 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(170, 6);
             // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
-            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
-            this.cutToolStripMenuItem.Text = "Cu&t";
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
-            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
-            this.copyToolStripMenuItem.Text = "&Copy";
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
-            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
-            this.pasteToolStripMenuItem.Text = "&Paste";
-            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
@@ -744,15 +587,6 @@
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
             this.customizeToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.customizeToolStripMenuItem.Text = "&Customize";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.optionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.optionsToolStripMenuItem.Image = global::DCDC_Manager.Properties.Resources.settings_icon;
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
-            this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
             // 
@@ -1331,21 +1165,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(142, 98);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
-            // batteryBtn
-            // 
-            this.batteryBtn.BackColor = System.Drawing.Color.Transparent;
-            this.batteryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.batteryBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.batteryBtn.Image = global::DCDC_Manager.Properties.Resources.Status_battery_missing_icon;
-            this.batteryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.batteryBtn.Location = new System.Drawing.Point(3, 3);
-            this.batteryBtn.Name = "batteryBtn";
-            this.batteryBtn.Size = new System.Drawing.Size(108, 43);
-            this.batteryBtn.TabIndex = 0;
-            this.batteryBtn.Text = "BATT";
-            this.batteryBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.batteryBtn.UseVisualStyleBackColor = false;
-            // 
             // lineBtn
             // 
             this.lineBtn.BackColor = System.Drawing.Color.Transparent;
@@ -1456,120 +1275,120 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            chartArea5.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea5.AxisX.LabelAutoFitStyle = ((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles)((((((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.IncreaseFont | System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.DecreaseFont) 
+            chartArea1.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea1.AxisX.LabelAutoFitStyle = ((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles)((((((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.IncreaseFont | System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.DecreaseFont) 
             | System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.StaggeredLabels) 
             | System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep30) 
             | System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep45) 
             | System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.WordWrap)));
-            chartArea5.AxisX.LabelStyle.Angle = 30;
-            chartArea5.AxisX.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisX.LabelStyle.Interval = 0D;
-            chartArea5.AxisX.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisX.MajorGrid.Interval = 0D;
-            chartArea5.AxisX.MajorGrid.IntervalOffset = 0D;
-            chartArea5.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea5.AxisX.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea5.AxisX.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea5.AxisX.MajorTickMark.Interval = 50D;
-            chartArea5.AxisX.MajorTickMark.IntervalOffset = 0D;
-            chartArea5.AxisX.MajorTickMark.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea5.AxisX.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea5.AxisX.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisX.MajorTickMark.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea5.AxisX.MajorTickMark.Size = 3F;
-            chartArea5.AxisX.Minimum = 0D;
-            chartArea5.AxisX.MinorGrid.Interval = 2D;
-            chartArea5.AxisX.MinorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisX.ScaleBreakStyle.Enabled = true;
-            chartArea5.AxisX.ScaleBreakStyle.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisX.ScrollBar.IsPositionedInside = false;
-            chartArea5.AxisX.Title = "Time";
-            chartArea5.AxisX.TitleForeColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisX2.Minimum = 0D;
-            chartArea5.AxisY.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisY.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisY.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea5.AxisY.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisY.MajorTickMark.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea5.AxisY.Minimum = 0D;
-            chartArea5.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
-            chartArea5.AxisY.Title = "Voltage (V)";
-            chartArea5.AxisY.TitleForeColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisY2.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisY2.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisY2.MajorGrid.Enabled = false;
-            chartArea5.AxisY2.MajorGrid.Interval = 0D;
-            chartArea5.AxisY2.MajorGrid.IntervalOffset = 0D;
-            chartArea5.AxisY2.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea5.AxisY2.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea5.AxisY2.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisY2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea5.AxisY2.MajorTickMark.Interval = 0D;
-            chartArea5.AxisY2.MajorTickMark.IntervalOffset = 0D;
-            chartArea5.AxisY2.MajorTickMark.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea5.AxisY2.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea5.AxisY2.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisY2.MajorTickMark.Size = 3F;
-            chartArea5.AxisY2.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
-            chartArea5.AxisY2.Maximum = 11D;
-            chartArea5.AxisY2.Minimum = 0D;
-            chartArea5.AxisY2.ScaleBreakStyle.LineColor = System.Drawing.SystemColors.Control;
-            chartArea5.AxisY2.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
-            chartArea5.AxisY2.Title = "Current (A)";
-            chartArea5.AxisY2.TitleForeColor = System.Drawing.SystemColors.Control;
-            chartArea5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            chartArea5.CursorX.AutoScroll = false;
-            chartArea5.CursorX.IsUserEnabled = true;
-            chartArea5.CursorX.IsUserSelectionEnabled = true;
-            chartArea5.CursorX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            chartArea5.CursorY.IsUserSelectionEnabled = true;
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
+            chartArea1.AxisX.LabelStyle.Angle = 30;
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisX.LabelStyle.Interval = 0D;
+            chartArea1.AxisX.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisX.MajorGrid.Interval = 0D;
+            chartArea1.AxisX.MajorGrid.IntervalOffset = 0D;
+            chartArea1.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisX.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisX.MajorTickMark.Interval = 50D;
+            chartArea1.AxisX.MajorTickMark.IntervalOffset = 0D;
+            chartArea1.AxisX.MajorTickMark.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisX.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisX.MajorTickMark.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisX.MajorTickMark.Size = 3F;
+            chartArea1.AxisX.Minimum = 0D;
+            chartArea1.AxisX.MinorGrid.Interval = 2D;
+            chartArea1.AxisX.MinorGrid.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisX.ScaleBreakStyle.Enabled = true;
+            chartArea1.AxisX.ScaleBreakStyle.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisX.ScrollBar.IsPositionedInside = false;
+            chartArea1.AxisX.Title = "Time";
+            chartArea1.AxisX.TitleForeColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisX2.Minimum = 0D;
+            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisY.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisY.MajorTickMark.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY.Minimum = 0D;
+            chartArea1.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
+            chartArea1.AxisY.Title = "Voltage (V)";
+            chartArea1.AxisY.TitleForeColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisY2.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisY2.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisY2.MajorGrid.Enabled = false;
+            chartArea1.AxisY2.MajorGrid.Interval = 0D;
+            chartArea1.AxisY2.MajorGrid.IntervalOffset = 0D;
+            chartArea1.AxisY2.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisY2.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisY2.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisY2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY2.MajorTickMark.Interval = 0D;
+            chartArea1.AxisY2.MajorTickMark.IntervalOffset = 0D;
+            chartArea1.AxisY2.MajorTickMark.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisY2.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisY2.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisY2.MajorTickMark.Size = 3F;
+            chartArea1.AxisY2.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
+            chartArea1.AxisY2.Maximum = 11D;
+            chartArea1.AxisY2.Minimum = 0D;
+            chartArea1.AxisY2.ScaleBreakStyle.LineColor = System.Drawing.SystemColors.Control;
+            chartArea1.AxisY2.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
+            chartArea1.AxisY2.Title = "Current (A)";
+            chartArea1.AxisY2.TitleForeColor = System.Drawing.SystemColors.Control;
+            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            chartArea1.CursorX.AutoScroll = false;
+            chartArea1.CursorX.IsUserEnabled = true;
+            chartArea1.CursorX.IsUserSelectionEnabled = true;
+            chartArea1.CursorX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            chartArea1.CursorY.IsUserSelectionEnabled = true;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Cursor = System.Windows.Forms.Cursors.Default;
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend5.BackColor = System.Drawing.Color.Transparent;
-            legend5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            legend5.ForeColor = System.Drawing.SystemColors.Control;
-            legend5.ItemColumnSpacing = 15;
-            legend5.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
-            legend5.Name = "Legend1";
-            legend5.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide;
-            legend5.TitleForeColor = System.Drawing.SystemColors.Control;
-            this.chart1.Legends.Add(legend5);
+            legend1.BackColor = System.Drawing.Color.Transparent;
+            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            legend1.ForeColor = System.Drawing.SystemColors.Control;
+            legend1.ItemColumnSpacing = 15;
+            legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
+            legend1.Name = "Legend1";
+            legend1.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide;
+            legend1.TitleForeColor = System.Drawing.SystemColors.Control;
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(3, 37);
             this.chart1.Name = "chart1";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.IsVisibleInLegend = false;
-            series9.LabelForeColor = System.Drawing.SystemColors.Control;
-            series9.Legend = "Legend1";
-            series9.LegendText = "Voltage";
-            series9.LegendToolTip = "Output 1 voltage";
-            series9.MarkerColor = System.Drawing.SystemColors.Control;
-            series9.Name = "out1MainChartVoltage";
-            series9.ToolTip = "X:[#VALX{E}] Y:[#VAL{G3}]";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series10.IsVisibleInLegend = false;
-            series10.LabelForeColor = System.Drawing.SystemColors.Control;
-            series10.Legend = "Legend1";
-            series10.LegendText = "Current";
-            series10.LegendToolTip = "Output 1 current";
-            series10.Name = "out1MainChartCurrent";
-            series10.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            this.chart1.Series.Add(series9);
-            this.chart1.Series.Add(series10);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.IsVisibleInLegend = false;
+            series1.LabelForeColor = System.Drawing.SystemColors.Control;
+            series1.Legend = "Legend1";
+            series1.LegendText = "Voltage";
+            series1.LegendToolTip = "Output 1 voltage";
+            series1.MarkerColor = System.Drawing.SystemColors.Control;
+            series1.Name = "out1MainChartVoltage";
+            series1.ToolTip = "X:[#VALX{E}] Y:[#VAL{G3}]";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.IsVisibleInLegend = false;
+            series2.LabelForeColor = System.Drawing.SystemColors.Control;
+            series2.Legend = "Legend1";
+            series2.LegendText = "Current";
+            series2.LegendToolTip = "Output 1 current";
+            series2.Name = "out1MainChartCurrent";
+            series2.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(136, 130);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
-            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            title3.ForeColor = System.Drawing.SystemColors.Control;
-            title3.Name = "Title1";
-            title3.Text = "Battery";
-            this.chart1.Titles.Add(title3);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            title1.ForeColor = System.Drawing.SystemColors.Control;
+            title1.Name = "Title1";
+            title1.Text = "Battery";
+            this.chart1.Titles.Add(title1);
             // 
             // statusStrip3
             // 
@@ -1585,14 +1404,6 @@
             this.statusStrip3.Size = new System.Drawing.Size(142, 22);
             this.statusStrip3.TabIndex = 5;
             this.statusStrip3.Text = "statusStrip3";
-            // 
-            // toolStripStatusLabel13
-            // 
-            this.toolStripStatusLabel13.Image = global::DCDC_Manager.Properties.Resources.log_icon;
-            this.toolStripStatusLabel13.Name = "toolStripStatusLabel13";
-            this.toolStripStatusLabel13.Size = new System.Drawing.Size(26, 17);
-            this.toolStripStatusLabel13.Text = " ";
-            this.toolStripStatusLabel13.Visible = false;
             // 
             // battInfoToolstripStatusLabel
             // 
@@ -1622,21 +1433,6 @@
             this.menuStrip3.TabIndex = 2;
             this.menuStrip3.Text = "menuStrip2";
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.AutoToolTip = true;
-            this.toolStripMenuItem1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.toolStripMenuItem1.Checked = true;
-            this.toolStripMenuItem1.CheckOnClick = true;
-            this.toolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.toolStripMenuItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.Transparent;
-            this.toolStripMenuItem1.Image = global::DCDC_Manager.Properties.Resources.chart_curve_icon;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(28, 28);
-            this.toolStripMenuItem1.ToolTipText = "Show / hide chart.";
-            this.toolStripMenuItem1.CheckedChanged += new System.EventHandler(this.toolStripMenuItem1_CheckedChanged);
-            // 
             // toolStripMenuItem40
             // 
             this.toolStripMenuItem40.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1655,43 +1451,11 @@
             this.toolStripMenuItem40.Size = new System.Drawing.Size(46, 28);
             this.toolStripMenuItem40.Text = "&File";
             // 
-            // toolStripMenuItem45
-            // 
-            this.toolStripMenuItem45.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem45.Image")));
-            this.toolStripMenuItem45.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem45.Name = "toolStripMenuItem45";
-            this.toolStripMenuItem45.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem45.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.toolStripMenuItem45.Size = new System.Drawing.Size(176, 26);
-            this.toolStripMenuItem45.Text = "&New";
-            this.toolStripMenuItem45.Visible = false;
-            // 
-            // toolStripMenuItem46
-            // 
-            this.toolStripMenuItem46.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem46.Image")));
-            this.toolStripMenuItem46.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem46.Name = "toolStripMenuItem46";
-            this.toolStripMenuItem46.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem46.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.toolStripMenuItem46.Size = new System.Drawing.Size(176, 26);
-            this.toolStripMenuItem46.Text = "&Open";
-            this.toolStripMenuItem46.Visible = false;
-            // 
             // toolStripSeparator17
             // 
             this.toolStripSeparator17.Name = "toolStripSeparator17";
             this.toolStripSeparator17.Size = new System.Drawing.Size(173, 6);
             this.toolStripSeparator17.Visible = false;
-            // 
-            // toolStripMenuItem47
-            // 
-            this.toolStripMenuItem47.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem47.Image")));
-            this.toolStripMenuItem47.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem47.Name = "toolStripMenuItem47";
-            this.toolStripMenuItem47.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem47.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.toolStripMenuItem47.Size = new System.Drawing.Size(176, 26);
-            this.toolStripMenuItem47.Text = "&Save";
             // 
             // toolStripMenuItem48
             // 
@@ -1705,39 +1469,11 @@
             this.toolStripSeparator18.Name = "toolStripSeparator18";
             this.toolStripSeparator18.Size = new System.Drawing.Size(173, 6);
             // 
-            // toolStripMenuItem49
-            // 
-            this.toolStripMenuItem49.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem49.Image")));
-            this.toolStripMenuItem49.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem49.Name = "toolStripMenuItem49";
-            this.toolStripMenuItem49.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem49.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.toolStripMenuItem49.Size = new System.Drawing.Size(176, 26);
-            this.toolStripMenuItem49.Text = "&Print";
-            // 
-            // toolStripMenuItem50
-            // 
-            this.toolStripMenuItem50.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem50.Image")));
-            this.toolStripMenuItem50.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem50.Name = "toolStripMenuItem50";
-            this.toolStripMenuItem50.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem50.Size = new System.Drawing.Size(176, 26);
-            this.toolStripMenuItem50.Text = "Print Pre&view";
-            // 
             // toolStripSeparator19
             // 
             this.toolStripSeparator19.Name = "toolStripSeparator19";
             this.toolStripSeparator19.Size = new System.Drawing.Size(173, 6);
             this.toolStripSeparator19.Visible = false;
-            // 
-            // battLogToolStripMenuItem
-            // 
-            this.battLogToolStripMenuItem.CheckOnClick = true;
-            this.battLogToolStripMenuItem.Image = global::DCDC_Manager.Properties.Resources.log_icon;
-            this.battLogToolStripMenuItem.Name = "battLogToolStripMenuItem";
-            this.battLogToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
-            this.battLogToolStripMenuItem.Text = "&Log";
-            this.battLogToolStripMenuItem.Visible = false;
             // 
             // toolStripMenuItem52
             // 
@@ -1995,27 +1731,6 @@
             this.label42.Text = "Object name";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::DCDC_Manager.Properties.Resources.settings_icon;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(26, 17);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::DCDC_Manager.Properties.Resources.Users_Exit_icon;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(121, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(24, 17);
-            this.panel2.TabIndex = 2;
-            this.panel2.Visible = false;
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -2138,79 +1853,11 @@
             this.toolStripMenuItem3.Text = "&Enable";
             this.toolStripMenuItem3.CheckedChanged += new System.EventHandler(this.toolStripMenuItem3_CheckedChanged);
             // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem6.CheckOnClick = true;
-            this.toolStripMenuItem6.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logfileToolStripMenuItem,
-            this.voltageToolStripMenuItem,
-            this.currentToolStripMenuItem});
-            this.toolStripMenuItem6.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem6.Image = global::DCDC_Manager.Properties.Resources.log_icon;
-            this.toolStripMenuItem6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem6.ShowShortcutKeys = false;
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(172, 26);
-            this.toolStripMenuItem6.Text = "&Log";
-            this.toolStripMenuItem6.CheckedChanged += new System.EventHandler(this.toolStripMenuItem6_CheckedChanged);
-            // 
-            // logfileToolStripMenuItem
-            // 
-            this.logfileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.logfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileNameToolStripMenuItem40});
-            this.logfileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.logfileToolStripMenuItem.Name = "logfileToolStripMenuItem";
-            this.logfileToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
-            this.logfileToolStripMenuItem.Text = "Log &file";
-            // 
-            // fileNameToolStripMenuItem40
-            // 
-            this.fileNameToolStripMenuItem40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.fileNameToolStripMenuItem40.ForeColor = System.Drawing.SystemColors.Control;
-            this.fileNameToolStripMenuItem40.Name = "fileNameToolStripMenuItem40";
-            this.fileNameToolStripMenuItem40.Size = new System.Drawing.Size(143, 26);
-            this.fileNameToolStripMenuItem40.Text = "fileName";
-            this.fileNameToolStripMenuItem40.Click += new System.EventHandler(this.fileNameToolStripMenuItem40_Click);
-            // 
-            // voltageToolStripMenuItem
-            // 
-            this.voltageToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.voltageToolStripMenuItem.CheckOnClick = true;
-            this.voltageToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.voltageToolStripMenuItem.Name = "voltageToolStripMenuItem";
-            this.voltageToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
-            this.voltageToolStripMenuItem.Text = "Voltage";
-            // 
-            // currentToolStripMenuItem
-            // 
-            this.currentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.currentToolStripMenuItem.CheckOnClick = true;
-            this.currentToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.currentToolStripMenuItem.Name = "currentToolStripMenuItem";
-            this.currentToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
-            this.currentToolStripMenuItem.Text = "Current";
-            // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
             this.toolStripSeparator12.Size = new System.Drawing.Size(169, 6);
             this.toolStripSeparator12.Visible = false;
-            // 
-            // toolStripMenuItem8
-            // 
-            this.toolStripMenuItem8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem8.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem8.Image")));
-            this.toolStripMenuItem8.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem8.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(172, 26);
-            this.toolStripMenuItem8.Text = "&Save";
-            this.toolStripMenuItem8.Visible = false;
             // 
             // toolStripMenuItem11
             // 
@@ -2225,27 +1872,6 @@
             this.toolStripSeparator13.Name = "toolStripSeparator13";
             this.toolStripSeparator13.Size = new System.Drawing.Size(169, 6);
             // 
-            // toolStripMenuItem12
-            // 
-            this.toolStripMenuItem12.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem12.Image")));
-            this.toolStripMenuItem12.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem12.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(172, 26);
-            this.toolStripMenuItem12.Text = "&Print";
-            this.toolStripMenuItem12.Visible = false;
-            // 
-            // toolStripMenuItem13
-            // 
-            this.toolStripMenuItem13.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem13.Image")));
-            this.toolStripMenuItem13.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem13.Name = "toolStripMenuItem13";
-            this.toolStripMenuItem13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem13.Size = new System.Drawing.Size(172, 26);
-            this.toolStripMenuItem13.Text = "Print Pre&view";
-            this.toolStripMenuItem13.Visible = false;
-            // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
@@ -2257,151 +1883,6 @@
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
             this.toolStripMenuItem14.Size = new System.Drawing.Size(172, 26);
             this.toolStripMenuItem14.Text = "E&xit";
-            // 
-            // toolStripMenuItem15
-            // 
-            this.toolStripMenuItem15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem15.CheckOnClick = true;
-            this.toolStripMenuItem15.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem26,
-            this.toolStripMenuItem27,
-            this.toolStripSeparator15,
-            this.toolStripMenuItem28,
-            this.toolStripMenuItem29,
-            this.toolStripMenuItem30,
-            this.toolStripSeparator16,
-            this.toolStripMenuItem34});
-            this.toolStripMenuItem15.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem15.Image = global::DCDC_Manager.Properties.Resources.log_icon;
-            this.toolStripMenuItem15.Name = "toolStripMenuItem15";
-            this.toolStripMenuItem15.Size = new System.Drawing.Size(64, 25);
-            this.toolStripMenuItem15.Text = "&Log";
-            this.toolStripMenuItem15.Visible = false;
-            // 
-            // toolStripMenuItem26
-            // 
-            this.toolStripMenuItem26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem26.Checked = true;
-            this.toolStripMenuItem26.CheckOnClick = true;
-            this.toolStripMenuItem26.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.toolStripMenuItem26.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem26.Name = "toolStripMenuItem26";
-            this.toolStripMenuItem26.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem26.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.toolStripMenuItem26.Size = new System.Drawing.Size(188, 26);
-            this.toolStripMenuItem26.Text = "&Voltage";
-            // 
-            // toolStripMenuItem27
-            // 
-            this.toolStripMenuItem27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem27.Checked = true;
-            this.toolStripMenuItem27.CheckOnClick = true;
-            this.toolStripMenuItem27.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.toolStripMenuItem27.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem27.Name = "toolStripMenuItem27";
-            this.toolStripMenuItem27.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem27.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.toolStripMenuItem27.Size = new System.Drawing.Size(188, 26);
-            this.toolStripMenuItem27.Text = "&Current";
-            // 
-            // toolStripSeparator15
-            // 
-            this.toolStripSeparator15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripSeparator15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(185, 6);
-            // 
-            // toolStripMenuItem28
-            // 
-            this.toolStripMenuItem28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem28.CheckOnClick = true;
-            this.toolStripMenuItem28.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem28.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem28.Name = "toolStripMenuItem28";
-            this.toolStripMenuItem28.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem28.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.toolStripMenuItem28.Size = new System.Drawing.Size(188, 26);
-            this.toolStripMenuItem28.Text = "&Legend";
-            // 
-            // toolStripMenuItem29
-            // 
-            this.toolStripMenuItem29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem29.CheckOnClick = true;
-            this.toolStripMenuItem29.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripTextBox1});
-            this.toolStripMenuItem29.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem29.Name = "toolStripMenuItem29";
-            this.toolStripMenuItem29.Size = new System.Drawing.Size(188, 26);
-            this.toolStripMenuItem29.Text = "&Title";
-            // 
-            // toolStripTextBox1
-            // 
-            this.toolStripTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.toolStripTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.toolStripTextBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
-            this.toolStripTextBox1.Text = "Output  1";
-            // 
-            // toolStripMenuItem30
-            // 
-            this.toolStripMenuItem30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem30.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem31,
-            this.toolStripMenuItem32,
-            this.toolStripMenuItem33});
-            this.toolStripMenuItem30.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem30.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem30.Name = "toolStripMenuItem30";
-            this.toolStripMenuItem30.ShowShortcutKeys = false;
-            this.toolStripMenuItem30.Size = new System.Drawing.Size(188, 26);
-            this.toolStripMenuItem30.Text = "&Axis";
-            // 
-            // toolStripMenuItem31
-            // 
-            this.toolStripMenuItem31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem31.Checked = true;
-            this.toolStripMenuItem31.CheckOnClick = true;
-            this.toolStripMenuItem31.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.toolStripMenuItem31.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem31.Name = "toolStripMenuItem31";
-            this.toolStripMenuItem31.Size = new System.Drawing.Size(153, 26);
-            this.toolStripMenuItem31.Text = "&Labels";
-            // 
-            // toolStripMenuItem32
-            // 
-            this.toolStripMenuItem32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem32.Checked = true;
-            this.toolStripMenuItem32.CheckOnClick = true;
-            this.toolStripMenuItem32.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.toolStripMenuItem32.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem32.Name = "toolStripMenuItem32";
-            this.toolStripMenuItem32.Size = new System.Drawing.Size(153, 26);
-            this.toolStripMenuItem32.Text = "Primary";
-            // 
-            // toolStripMenuItem33
-            // 
-            this.toolStripMenuItem33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem33.CheckOnClick = true;
-            this.toolStripMenuItem33.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem33.Name = "toolStripMenuItem33";
-            this.toolStripMenuItem33.Size = new System.Drawing.Size(153, 26);
-            this.toolStripMenuItem33.Text = "Secondary";
-            // 
-            // toolStripSeparator16
-            // 
-            this.toolStripSeparator16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripSeparator16.Name = "toolStripSeparator16";
-            this.toolStripSeparator16.Size = new System.Drawing.Size(185, 6);
-            // 
-            // toolStripMenuItem34
-            // 
-            this.toolStripMenuItem34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStripMenuItem34.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem34.Name = "toolStripMenuItem34";
-            this.toolStripMenuItem34.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem34.Size = new System.Drawing.Size(188, 26);
-            this.toolStripMenuItem34.Text = "Select &All";
             // 
             // toolStripMenuItem35
             // 
@@ -2472,15 +1953,6 @@
             this.statusStrip2.TabIndex = 4;
             this.statusStrip2.Text = "statusStrip2";
             // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripStatusLabel1.Image = global::DCDC_Manager.Properties.Resources.switch_on_icon;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(56, 17);
-            this.toolStripStatusLabel1.Text = "OUT 1";
-            // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
@@ -2524,14 +1996,6 @@
             this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
             this.toolStripStatusLabel6.Size = new System.Drawing.Size(10, 17);
             this.toolStripStatusLabel6.Text = "|";
-            // 
-            // out1MainInfoTsSl
-            // 
-            this.out1MainInfoTsSl.Image = global::DCDC_Manager.Properties.Resources.log_icon;
-            this.out1MainInfoTsSl.Name = "out1MainInfoTsSl";
-            this.out1MainInfoTsSl.Size = new System.Drawing.Size(26, 17);
-            this.out1MainInfoTsSl.Text = " ";
-            this.out1MainInfoTsSl.Visible = false;
             // 
             // splitContainer7
             // 
@@ -2983,19 +2447,6 @@
             this.out1MainChartMenuStrip.Text = "menuStrip2";
             this.out1MainChartMenuStrip.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical270;
             // 
-            // toolStripMenuItem41
-            // 
-            this.toolStripMenuItem41.AutoToolTip = true;
-            this.toolStripMenuItem41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.toolStripMenuItem41.CheckOnClick = true;
-            this.toolStripMenuItem41.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripMenuItem41.ForeColor = System.Drawing.Color.Transparent;
-            this.toolStripMenuItem41.Image = global::DCDC_Manager.Properties.Resources.chart_curve_icon;
-            this.toolStripMenuItem41.Name = "toolStripMenuItem41";
-            this.toolStripMenuItem41.Size = new System.Drawing.Size(25, 20);
-            this.toolStripMenuItem41.ToolTipText = "Show / hide chart.";
-            this.toolStripMenuItem41.CheckedChanged += new System.EventHandler(this.toolStripMenuItem41_CheckedChanged);
-            // 
             // out1FileToolStripMenuItem
             // 
             this.out1FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -3014,44 +2465,11 @@
             this.out1FileToolStripMenuItem.Size = new System.Drawing.Size(25, 38);
             this.out1FileToolStripMenuItem.Text = "&File";
             // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
-            this.toolStripMenuItem4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem4.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(176, 26);
-            this.toolStripMenuItem4.Text = "&New";
-            this.toolStripMenuItem4.Visible = false;
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
-            this.toolStripMenuItem5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem5.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(176, 26);
-            this.toolStripMenuItem5.Text = "&Open";
-            this.toolStripMenuItem5.Visible = false;
-            // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(173, 6);
             this.toolStripSeparator6.Visible = false;
-            // 
-            // out1MainChartSaveToolStripMenuItem
-            // 
-            this.out1MainChartSaveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("out1MainChartSaveToolStripMenuItem.Image")));
-            this.out1MainChartSaveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.out1MainChartSaveToolStripMenuItem.Name = "out1MainChartSaveToolStripMenuItem";
-            this.out1MainChartSaveToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.out1MainChartSaveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.out1MainChartSaveToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
-            this.out1MainChartSaveToolStripMenuItem.Text = "&Save";
-            this.out1MainChartSaveToolStripMenuItem.Click += new System.EventHandler(this.out1MainChartSaveToolStripMenuItem_Click);
             // 
             // toolStripMenuItem7
             // 
@@ -3064,26 +2482,6 @@
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(173, 6);
-            // 
-            // out1MainChartPrintToolStripMenuItem
-            // 
-            this.out1MainChartPrintToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("out1MainChartPrintToolStripMenuItem.Image")));
-            this.out1MainChartPrintToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.out1MainChartPrintToolStripMenuItem.Name = "out1MainChartPrintToolStripMenuItem";
-            this.out1MainChartPrintToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.out1MainChartPrintToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.out1MainChartPrintToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
-            this.out1MainChartPrintToolStripMenuItem.Text = "&Print";
-            this.out1MainChartPrintToolStripMenuItem.Click += new System.EventHandler(this.out1MainChartPrintToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem9
-            // 
-            this.toolStripMenuItem9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem9.Image")));
-            this.toolStripMenuItem9.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(176, 26);
-            this.toolStripMenuItem9.Text = "Print Pre&view";
             // 
             // toolStripSeparator8
             // 
@@ -3301,123 +2699,123 @@
             // 
             this.out1MainValuesChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.out1MainValuesChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea6.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea6.AxisX.Interval = 2D;
-            chartArea6.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea6.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea6.AxisX.IsInterlaced = true;
-            chartArea6.AxisX.IsLabelAutoFit = false;
-            chartArea6.AxisX.LabelAutoFitStyle = ((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles)(((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.IncreaseFont | System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.DecreaseFont) 
+            chartArea2.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea2.AxisX.Interval = 2D;
+            chartArea2.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea2.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea2.AxisX.IsInterlaced = true;
+            chartArea2.AxisX.IsLabelAutoFit = false;
+            chartArea2.AxisX.LabelAutoFitStyle = ((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles)(((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.IncreaseFont | System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.DecreaseFont) 
             | System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.StaggeredLabels)));
-            chartArea6.AxisX.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisX.LabelStyle.Interval = 0.2D;
-            chartArea6.AxisX.LabelStyle.IsStaggered = true;
-            chartArea6.AxisX.LabelStyle.TruncatedLabels = true;
-            chartArea6.AxisX.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisX.MajorGrid.Interval = 0.1D;
-            chartArea6.AxisX.MajorGrid.IntervalOffset = 0D;
-            chartArea6.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea6.AxisX.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea6.AxisX.MajorTickMark.Interval = 0.2D;
-            chartArea6.AxisX.MajorTickMark.IntervalOffset = 0D;
-            chartArea6.AxisX.MajorTickMark.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea6.AxisX.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea6.AxisX.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisX.MajorTickMark.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea6.AxisX.MajorTickMark.Size = 3F;
-            chartArea6.AxisX.MaximumAutoSize = 4F;
-            chartArea6.AxisX.MinorGrid.Interval = 2D;
-            chartArea6.AxisX.MinorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisX.ScaleBreakStyle.Enabled = true;
-            chartArea6.AxisX.ScaleBreakStyle.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisX.ScrollBar.IsPositionedInside = false;
-            chartArea6.AxisX.Title = "Time";
-            chartArea6.AxisX.TitleForeColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisX2.Minimum = 0D;
-            chartArea6.AxisY.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisY.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisY.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea6.AxisY.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisY.MajorTickMark.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea6.AxisY.Maximum = 25D;
-            chartArea6.AxisY.Minimum = 0D;
-            chartArea6.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
-            chartArea6.AxisY.Title = "Voltage (V)";
-            chartArea6.AxisY.TitleForeColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisY2.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisY2.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisY2.MajorGrid.Interval = 0D;
-            chartArea6.AxisY2.MajorGrid.IntervalOffset = 0D;
-            chartArea6.AxisY2.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea6.AxisY2.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea6.AxisY2.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisY2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea6.AxisY2.MajorTickMark.Interval = 0D;
-            chartArea6.AxisY2.MajorTickMark.IntervalOffset = 0D;
-            chartArea6.AxisY2.MajorTickMark.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea6.AxisY2.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea6.AxisY2.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisY2.MajorTickMark.Size = 3F;
-            chartArea6.AxisY2.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
-            chartArea6.AxisY2.Maximum = 11D;
-            chartArea6.AxisY2.Minimum = 0D;
-            chartArea6.AxisY2.ScaleBreakStyle.Enabled = true;
-            chartArea6.AxisY2.ScaleBreakStyle.LineColor = System.Drawing.SystemColors.Control;
-            chartArea6.AxisY2.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
-            chartArea6.AxisY2.Title = "Current (A)";
-            chartArea6.AxisY2.TitleForeColor = System.Drawing.SystemColors.Control;
-            chartArea6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            chartArea6.CursorX.AutoScroll = false;
-            chartArea6.CursorX.IsUserEnabled = true;
-            chartArea6.CursorX.IsUserSelectionEnabled = true;
-            chartArea6.CursorX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            chartArea6.CursorY.IsUserSelectionEnabled = true;
-            chartArea6.Name = "ChartArea1";
-            this.out1MainValuesChart.ChartAreas.Add(chartArea6);
+            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisX.LabelStyle.Interval = 0.2D;
+            chartArea2.AxisX.LabelStyle.IsStaggered = true;
+            chartArea2.AxisX.LabelStyle.TruncatedLabels = true;
+            chartArea2.AxisX.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisX.MajorGrid.Interval = 0.1D;
+            chartArea2.AxisX.MajorGrid.IntervalOffset = 0D;
+            chartArea2.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisX.MajorTickMark.Interval = 0.2D;
+            chartArea2.AxisX.MajorTickMark.IntervalOffset = 0D;
+            chartArea2.AxisX.MajorTickMark.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea2.AxisX.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisX.MajorTickMark.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisX.MajorTickMark.Size = 3F;
+            chartArea2.AxisX.MaximumAutoSize = 4F;
+            chartArea2.AxisX.MinorGrid.Interval = 2D;
+            chartArea2.AxisX.MinorGrid.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisX.ScaleBreakStyle.Enabled = true;
+            chartArea2.AxisX.ScaleBreakStyle.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisX.ScrollBar.IsPositionedInside = false;
+            chartArea2.AxisX.Title = "Time";
+            chartArea2.AxisX.TitleForeColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisX2.Minimum = 0D;
+            chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisY.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisY.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisY.MajorTickMark.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisY.Maximum = 25D;
+            chartArea2.AxisY.Minimum = 0D;
+            chartArea2.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
+            chartArea2.AxisY.Title = "Voltage (V)";
+            chartArea2.AxisY.TitleForeColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisY2.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisY2.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisY2.MajorGrid.Interval = 0D;
+            chartArea2.AxisY2.MajorGrid.IntervalOffset = 0D;
+            chartArea2.AxisY2.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea2.AxisY2.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea2.AxisY2.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisY2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisY2.MajorTickMark.Interval = 0D;
+            chartArea2.AxisY2.MajorTickMark.IntervalOffset = 0D;
+            chartArea2.AxisY2.MajorTickMark.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea2.AxisY2.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea2.AxisY2.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisY2.MajorTickMark.Size = 3F;
+            chartArea2.AxisY2.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
+            chartArea2.AxisY2.Maximum = 11D;
+            chartArea2.AxisY2.Minimum = 0D;
+            chartArea2.AxisY2.ScaleBreakStyle.Enabled = true;
+            chartArea2.AxisY2.ScaleBreakStyle.LineColor = System.Drawing.SystemColors.Control;
+            chartArea2.AxisY2.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
+            chartArea2.AxisY2.Title = "Current (A)";
+            chartArea2.AxisY2.TitleForeColor = System.Drawing.SystemColors.Control;
+            chartArea2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            chartArea2.CursorX.AutoScroll = false;
+            chartArea2.CursorX.IsUserEnabled = true;
+            chartArea2.CursorX.IsUserSelectionEnabled = true;
+            chartArea2.CursorX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            chartArea2.CursorY.IsUserSelectionEnabled = true;
+            chartArea2.Name = "ChartArea1";
+            this.out1MainValuesChart.ChartAreas.Add(chartArea2);
             this.out1MainValuesChart.Cursor = System.Windows.Forms.Cursors.Default;
             this.out1MainValuesChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend6.BackColor = System.Drawing.Color.Transparent;
-            legend6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            legend6.ForeColor = System.Drawing.SystemColors.Control;
-            legend6.ItemColumnSpacing = 15;
-            legend6.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
-            legend6.Name = "Legend1";
-            legend6.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide;
-            legend6.TitleForeColor = System.Drawing.SystemColors.Control;
-            this.out1MainValuesChart.Legends.Add(legend6);
+            legend2.BackColor = System.Drawing.Color.Transparent;
+            legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            legend2.ForeColor = System.Drawing.SystemColors.Control;
+            legend2.ItemColumnSpacing = 15;
+            legend2.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
+            legend2.Name = "Legend1";
+            legend2.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide;
+            legend2.TitleForeColor = System.Drawing.SystemColors.Control;
+            this.out1MainValuesChart.Legends.Add(legend2);
             this.out1MainValuesChart.Location = new System.Drawing.Point(38, 3);
             this.out1MainValuesChart.Name = "out1MainValuesChart";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series11.IsVisibleInLegend = false;
-            series11.LabelForeColor = System.Drawing.SystemColors.Control;
-            series11.Legend = "Legend1";
-            series11.LegendText = "Voltage";
-            series11.LegendToolTip = "Output 1 voltage";
-            series11.MarkerColor = System.Drawing.SystemColors.Control;
-            series11.Name = "out1MainChartVoltage";
-            series11.ToolTip = "X:[#VALX{E}] Y:[#VAL{G3}]";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series12.IsVisibleInLegend = false;
-            series12.LabelForeColor = System.Drawing.SystemColors.Control;
-            series12.Legend = "Legend1";
-            series12.LegendText = "Current";
-            series12.LegendToolTip = "Output 1 current";
-            series12.Name = "out1MainChartCurrent";
-            series12.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            this.out1MainValuesChart.Series.Add(series11);
-            this.out1MainValuesChart.Series.Add(series12);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.IsVisibleInLegend = false;
+            series3.LabelForeColor = System.Drawing.SystemColors.Control;
+            series3.Legend = "Legend1";
+            series3.LegendText = "Voltage";
+            series3.LegendToolTip = "Output 1 voltage";
+            series3.MarkerColor = System.Drawing.SystemColors.Control;
+            series3.Name = "out1MainChartVoltage";
+            series3.ToolTip = "X:[#VALX{E}] Y:[#VAL{G3}]";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.IsVisibleInLegend = false;
+            series4.LabelForeColor = System.Drawing.SystemColors.Control;
+            series4.Legend = "Legend1";
+            series4.LegendText = "Current";
+            series4.LegendToolTip = "Output 1 current";
+            series4.Name = "out1MainChartCurrent";
+            series4.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            this.out1MainValuesChart.Series.Add(series3);
+            this.out1MainValuesChart.Series.Add(series4);
             this.out1MainValuesChart.Size = new System.Drawing.Size(300, 170);
             this.out1MainValuesChart.TabIndex = 1;
             this.out1MainValuesChart.Text = "chart1";
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            title4.ForeColor = System.Drawing.SystemColors.Control;
-            title4.Name = "Title1";
-            title4.Text = "Out 1";
-            this.out1MainValuesChart.Titles.Add(title4);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            title2.ForeColor = System.Drawing.SystemColors.Control;
+            title2.Name = "Title1";
+            title2.Text = "Out 1";
+            this.out1MainValuesChart.Titles.Add(title2);
             this.out1MainValuesChart.Visible = false;
             // 
             // splitContainer12
@@ -3429,837 +2827,14 @@
             // 
             // splitContainer12.Panel1
             // 
-            this.splitContainer12.Panel1.Controls.Add(this.splitContainer8);
+            this.splitContainer12.Panel1.Controls.Add(this.outputPanelContainer1);
             this.splitContainer12.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer12_Panel1_Paint);
             this.splitContainer12.Panel1MinSize = 30;
-            // 
-            // splitContainer12.Panel2
-            // 
-            this.splitContainer12.Panel2.Controls.Add(this.splitContainer9);
             this.splitContainer12.Panel2MinSize = 30;
             this.splitContainer12.Size = new System.Drawing.Size(687, 359);
             this.splitContainer12.SplitterDistance = 179;
             this.splitContainer12.SplitterWidth = 7;
             this.splitContainer12.TabIndex = 0;
-            // 
-            // splitContainer8
-            // 
-            this.splitContainer8.BackColor = System.Drawing.Color.Transparent;
-            this.splitContainer8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer8.IsSplitterFixed = true;
-            this.splitContainer8.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer8.Name = "splitContainer8";
-            // 
-            // splitContainer8.Panel1
-            // 
-            this.splitContainer8.Panel1.Controls.Add(this.tableLayoutPanel22);
-            this.splitContainer8.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer7_Panel1_Paint);
-            this.splitContainer8.Panel1MinSize = 290;
-            // 
-            // splitContainer8.Panel2
-            // 
-            this.splitContainer8.Panel2.Controls.Add(this.tableLayoutPanel27);
-            this.splitContainer8.Panel2MinSize = 65;
-            this.splitContainer8.Size = new System.Drawing.Size(687, 179);
-            this.splitContainer8.SplitterDistance = 332;
-            this.splitContainer8.TabIndex = 1;
-            this.splitContainer8.Resize += new System.EventHandler(this.splitContainer8_Resize);
-            // 
-            // tableLayoutPanel22
-            // 
-            this.tableLayoutPanel22.ColumnCount = 1;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel22.Controls.Add(this.tableLayoutPanel36, 0, 0);
-            this.tableLayoutPanel22.Controls.Add(this.tableLayoutPanel24, 0, 1);
-            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.RowCount = 2;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(330, 177);
-            this.tableLayoutPanel22.TabIndex = 0;
-            // 
-            // tableLayoutPanel36
-            // 
-            this.tableLayoutPanel36.ColumnCount = 3;
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.tableLayoutPanel36.Controls.Add(this.out2MainEnabledChckBox, 0, 0);
-            this.tableLayoutPanel36.Controls.Add(this.out2MainStatusPanel, 2, 0);
-            this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel36.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel36.Name = "tableLayoutPanel36";
-            this.tableLayoutPanel36.RowCount = 1;
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel36.Size = new System.Drawing.Size(324, 29);
-            this.tableLayoutPanel36.TabIndex = 4;
-            // 
-            // out2MainEnabledChckBox
-            // 
-            this.out2MainEnabledChckBox.AutoSize = true;
-            this.out2MainEnabledChckBox.BackColor = System.Drawing.Color.Transparent;
-            this.out2MainEnabledChckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out2MainEnabledChckBox.Location = new System.Drawing.Point(3, 3);
-            this.out2MainEnabledChckBox.Name = "out2MainEnabledChckBox";
-            this.out2MainEnabledChckBox.Size = new System.Drawing.Size(119, 23);
-            this.out2MainEnabledChckBox.TabIndex = 1;
-            this.out2MainEnabledChckBox.Text = "Enabled";
-            this.out2MainEnabledChckBox.UseVisualStyleBackColor = false;
-            this.out2MainEnabledChckBox.CheckedChanged += new System.EventHandler(this.out2MainEnabledChckBox_CheckedChanged);
-            // 
-            // out2MainStatusPanel
-            // 
-            this.out2MainStatusPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.out2MainStatusPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.out2MainStatusPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out2MainStatusPanel.Location = new System.Drawing.Point(253, 3);
-            this.out2MainStatusPanel.Name = "out2MainStatusPanel";
-            this.out2MainStatusPanel.Size = new System.Drawing.Size(68, 23);
-            this.out2MainStatusPanel.TabIndex = 2;
-            // 
-            // tableLayoutPanel24
-            // 
-            this.tableLayoutPanel24.ColumnCount = 3;
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.28283F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.85859F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.85859F));
-            this.tableLayoutPanel24.Controls.Add(this.label28, 0, 2);
-            this.tableLayoutPanel24.Controls.Add(this.out2MainDesVtgNumUpDown, 2, 1);
-            this.tableLayoutPanel24.Controls.Add(this.tableLayoutPanel25, 1, 1);
-            this.tableLayoutPanel24.Controls.Add(this.tableLayoutPanel26, 1, 2);
-            this.tableLayoutPanel24.Controls.Add(this.label31, 1, 0);
-            this.tableLayoutPanel24.Controls.Add(this.label32, 2, 0);
-            this.tableLayoutPanel24.Controls.Add(this.label33, 0, 1);
-            this.tableLayoutPanel24.Controls.Add(this.out2MainDesCurrNumUpDown, 2, 2);
-            this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel24.Location = new System.Drawing.Point(3, 38);
-            this.tableLayoutPanel24.Name = "tableLayoutPanel24";
-            this.tableLayoutPanel24.RowCount = 3;
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.55752F));
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.44248F));
-            this.tableLayoutPanel24.Size = new System.Drawing.Size(324, 136);
-            this.tableLayoutPanel24.TabIndex = 0;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Location = new System.Drawing.Point(3, 75);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(85, 61);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "Current:";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // out2MainDesVtgNumUpDown
-            // 
-            this.out2MainDesVtgNumUpDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.out2MainDesVtgNumUpDown.DecimalPlaces = 2;
-            this.out2MainDesVtgNumUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out2MainDesVtgNumUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out2MainDesVtgNumUpDown.ForeColor = System.Drawing.SystemColors.Control;
-            this.out2MainDesVtgNumUpDown.Location = new System.Drawing.Point(210, 20);
-            this.out2MainDesVtgNumUpDown.Name = "out2MainDesVtgNumUpDown";
-            this.out2MainDesVtgNumUpDown.Size = new System.Drawing.Size(111, 49);
-            this.out2MainDesVtgNumUpDown.TabIndex = 8;
-            this.out2MainDesVtgNumUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tableLayoutPanel25
-            // 
-            this.tableLayoutPanel25.ColumnCount = 1;
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel25.Controls.Add(this.progressBar7, 0, 1);
-            this.tableLayoutPanel25.Controls.Add(this.out2MainRealVtgLbl, 0, 0);
-            this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(94, 20);
-            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
-            this.tableLayoutPanel25.RowCount = 2;
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.43137F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.56863F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(110, 52);
-            this.tableLayoutPanel25.TabIndex = 2;
-            // 
-            // progressBar7
-            // 
-            this.progressBar7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.progressBar7.Location = new System.Drawing.Point(3, 43);
-            this.progressBar7.Name = "progressBar7";
-            this.progressBar7.Size = new System.Drawing.Size(104, 6);
-            this.progressBar7.TabIndex = 0;
-            this.progressBar7.Value = 50;
-            // 
-            // out2MainRealVtgLbl
-            // 
-            this.out2MainRealVtgLbl.AutoSize = true;
-            this.out2MainRealVtgLbl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out2MainRealVtgLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out2MainRealVtgLbl.Location = new System.Drawing.Point(3, 0);
-            this.out2MainRealVtgLbl.Name = "out2MainRealVtgLbl";
-            this.out2MainRealVtgLbl.Size = new System.Drawing.Size(104, 40);
-            this.out2MainRealVtgLbl.TabIndex = 1;
-            this.out2MainRealVtgLbl.Text = "13.2";
-            this.out2MainRealVtgLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel26
-            // 
-            this.tableLayoutPanel26.ColumnCount = 1;
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel26.Controls.Add(this.progressBar8, 0, 1);
-            this.tableLayoutPanel26.Controls.Add(this.out2MainRealCurrLbl, 0, 0);
-            this.tableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel26.Location = new System.Drawing.Point(94, 78);
-            this.tableLayoutPanel26.Name = "tableLayoutPanel26";
-            this.tableLayoutPanel26.RowCount = 2;
-            this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(110, 55);
-            this.tableLayoutPanel26.TabIndex = 3;
-            // 
-            // progressBar8
-            // 
-            this.progressBar8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.progressBar8.Location = new System.Drawing.Point(3, 47);
-            this.progressBar8.Name = "progressBar8";
-            this.progressBar8.Size = new System.Drawing.Size(104, 5);
-            this.progressBar8.TabIndex = 0;
-            this.progressBar8.Value = 10;
-            // 
-            // out2MainRealCurrLbl
-            // 
-            this.out2MainRealCurrLbl.AutoSize = true;
-            this.out2MainRealCurrLbl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out2MainRealCurrLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out2MainRealCurrLbl.Location = new System.Drawing.Point(3, 0);
-            this.out2MainRealCurrLbl.Name = "out2MainRealCurrLbl";
-            this.out2MainRealCurrLbl.Size = new System.Drawing.Size(104, 44);
-            this.out2MainRealCurrLbl.TabIndex = 1;
-            this.out2MainRealCurrLbl.Text = "1.5";
-            this.out2MainRealCurrLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label31.Location = new System.Drawing.Point(94, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(110, 17);
-            this.label31.TabIndex = 6;
-            this.label31.Text = "Real";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label32.Location = new System.Drawing.Point(210, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(111, 17);
-            this.label32.TabIndex = 7;
-            this.label32.Text = "Desired";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.Location = new System.Drawing.Point(3, 17);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(85, 58);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "Voltage:";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // out2MainDesCurrNumUpDown
-            // 
-            this.out2MainDesCurrNumUpDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.out2MainDesCurrNumUpDown.DecimalPlaces = 2;
-            this.out2MainDesCurrNumUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out2MainDesCurrNumUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out2MainDesCurrNumUpDown.ForeColor = System.Drawing.SystemColors.Control;
-            this.out2MainDesCurrNumUpDown.Location = new System.Drawing.Point(210, 78);
-            this.out2MainDesCurrNumUpDown.Name = "out2MainDesCurrNumUpDown";
-            this.out2MainDesCurrNumUpDown.Size = new System.Drawing.Size(111, 49);
-            this.out2MainDesCurrNumUpDown.TabIndex = 9;
-            this.out2MainDesCurrNumUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tableLayoutPanel27
-            // 
-            this.tableLayoutPanel27.ColumnCount = 1;
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel27.Controls.Add(this.tableLayoutPanel28, 0, 0);
-            this.tableLayoutPanel27.Controls.Add(this.out2MainValuesChart, 0, 1);
-            this.tableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel27.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel27.Name = "tableLayoutPanel27";
-            this.tableLayoutPanel27.RowCount = 2;
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(349, 177);
-            this.tableLayoutPanel27.TabIndex = 2;
-            // 
-            // tableLayoutPanel28
-            // 
-            this.tableLayoutPanel28.ColumnCount = 4;
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel28.Controls.Add(this.out2PlotCurrCheckBox, 2, 0);
-            this.tableLayoutPanel28.Controls.Add(this.out2PlotChckBox, 0, 0);
-            this.tableLayoutPanel28.Controls.Add(this.out2PlotVtgChckBox, 1, 0);
-            this.tableLayoutPanel28.Controls.Add(this.out2PlotLegendChckBox, 3, 0);
-            this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel28.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel28.Name = "tableLayoutPanel28";
-            this.tableLayoutPanel28.RowCount = 1;
-            this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel28.Size = new System.Drawing.Size(343, 31);
-            this.tableLayoutPanel28.TabIndex = 0;
-            // 
-            // out2PlotCurrCheckBox
-            // 
-            this.out2PlotCurrCheckBox.AutoSize = true;
-            this.out2PlotCurrCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out2PlotCurrCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out2PlotCurrCheckBox.Location = new System.Drawing.Point(147, 3);
-            this.out2PlotCurrCheckBox.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
-            this.out2PlotCurrCheckBox.Name = "out2PlotCurrCheckBox";
-            this.out2PlotCurrCheckBox.Size = new System.Drawing.Size(76, 25);
-            this.out2PlotCurrCheckBox.TabIndex = 2;
-            this.out2PlotCurrCheckBox.Text = "Current";
-            this.out2PlotCurrCheckBox.UseVisualStyleBackColor = true;
-            this.out2PlotCurrCheckBox.Visible = false;
-            this.out2PlotCurrCheckBox.CheckedChanged += new System.EventHandler(this.out2PlotCurrCheckBox_CheckedChanged);
-            // 
-            // out2PlotChckBox
-            // 
-            this.out2PlotChckBox.AutoSize = true;
-            this.out2PlotChckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out2PlotChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out2PlotChckBox.Location = new System.Drawing.Point(3, 3);
-            this.out2PlotChckBox.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
-            this.out2PlotChckBox.Name = "out2PlotChckBox";
-            this.out2PlotChckBox.Size = new System.Drawing.Size(60, 25);
-            this.out2PlotChckBox.TabIndex = 0;
-            this.out2PlotChckBox.Text = "Plot";
-            this.out2PlotChckBox.UseVisualStyleBackColor = true;
-            this.out2PlotChckBox.CheckedChanged += new System.EventHandler(this.out2PlotChckBox_CheckedChanged);
-            // 
-            // out2PlotVtgChckBox
-            // 
-            this.out2PlotVtgChckBox.AutoSize = true;
-            this.out2PlotVtgChckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out2PlotVtgChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out2PlotVtgChckBox.Location = new System.Drawing.Point(67, 3);
-            this.out2PlotVtgChckBox.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
-            this.out2PlotVtgChckBox.Name = "out2PlotVtgChckBox";
-            this.out2PlotVtgChckBox.Size = new System.Drawing.Size(76, 25);
-            this.out2PlotVtgChckBox.TabIndex = 1;
-            this.out2PlotVtgChckBox.Text = "Voltage";
-            this.out2PlotVtgChckBox.UseVisualStyleBackColor = true;
-            this.out2PlotVtgChckBox.Visible = false;
-            this.out2PlotVtgChckBox.CheckedChanged += new System.EventHandler(this.out2PlotVtgChckBox_CheckedChanged);
-            // 
-            // out2PlotLegendChckBox
-            // 
-            this.out2PlotLegendChckBox.AutoSize = true;
-            this.out2PlotLegendChckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out2PlotLegendChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out2PlotLegendChckBox.Location = new System.Drawing.Point(227, 3);
-            this.out2PlotLegendChckBox.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            this.out2PlotLegendChckBox.Name = "out2PlotLegendChckBox";
-            this.out2PlotLegendChckBox.Size = new System.Drawing.Size(116, 25);
-            this.out2PlotLegendChckBox.TabIndex = 3;
-            this.out2PlotLegendChckBox.Text = "Legend";
-            this.out2PlotLegendChckBox.UseVisualStyleBackColor = true;
-            this.out2PlotLegendChckBox.Visible = false;
-            this.out2PlotLegendChckBox.CheckedChanged += new System.EventHandler(this.out2PlotLegendChckBox_CheckedChanged);
-            // 
-            // out2MainValuesChart
-            // 
-            this.out2MainValuesChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.out2MainValuesChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea7.AxisX.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisX.LineColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisX.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea7.AxisX.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisX.Minimum = 0D;
-            chartArea7.AxisX.ScrollBar.IsPositionedInside = false;
-            chartArea7.AxisX2.Minimum = 0D;
-            chartArea7.AxisY.Interval = 5D;
-            chartArea7.AxisY.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisY.LabelStyle.Interval = 5D;
-            chartArea7.AxisY.LineColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisY.MajorGrid.Interval = 5D;
-            chartArea7.AxisY.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea7.AxisY.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisY.MajorTickMark.Size = 2F;
-            chartArea7.AxisY.Maximum = 25D;
-            chartArea7.AxisY.Minimum = 0D;
-            chartArea7.AxisY.ScrollBar.Enabled = false;
-            chartArea7.AxisY.TitleForeColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisY2.Interval = 2D;
-            chartArea7.AxisY2.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisY2.LabelStyle.Interval = 0D;
-            chartArea7.AxisY2.LineColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisY2.MajorGrid.Enabled = false;
-            chartArea7.AxisY2.MajorGrid.Interval = 5D;
-            chartArea7.AxisY2.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisY2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
-            chartArea7.AxisY2.MajorTickMark.Enabled = false;
-            chartArea7.AxisY2.MajorTickMark.Interval = 2D;
-            chartArea7.AxisY2.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea7.AxisY2.Maximum = 11D;
-            chartArea7.AxisY2.Minimum = 0D;
-            chartArea7.AxisY2.ScrollBar.Enabled = false;
-            chartArea7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            chartArea7.Name = "ChartArea1";
-            this.out2MainValuesChart.ChartAreas.Add(chartArea7);
-            this.out2MainValuesChart.Cursor = System.Windows.Forms.Cursors.Default;
-            this.out2MainValuesChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            legend7.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            legend7.ForeColor = System.Drawing.SystemColors.Control;
-            legend7.ItemColumnSpacing = 15;
-            legend7.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
-            legend7.Name = "Legend1";
-            legend7.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide;
-            this.out2MainValuesChart.Legends.Add(legend7);
-            this.out2MainValuesChart.Location = new System.Drawing.Point(3, 40);
-            this.out2MainValuesChart.Name = "out2MainValuesChart";
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series13.IsVisibleInLegend = false;
-            series13.LabelForeColor = System.Drawing.SystemColors.Control;
-            series13.Legend = "Legend1";
-            series13.LegendText = "Voltage";
-            series13.LegendToolTip = "Output 1 voltage";
-            series13.Name = "out2MainChartVoltage";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series14.IsVisibleInLegend = false;
-            series14.LabelForeColor = System.Drawing.SystemColors.Control;
-            series14.Legend = "Legend1";
-            series14.LegendText = "Current";
-            series14.LegendToolTip = "Output 1 current";
-            series14.Name = "out2MainChartCurrent";
-            series14.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            this.out2MainValuesChart.Series.Add(series13);
-            this.out2MainValuesChart.Series.Add(series14);
-            this.out2MainValuesChart.Size = new System.Drawing.Size(343, 134);
-            this.out2MainValuesChart.TabIndex = 1;
-            this.out2MainValuesChart.Text = "chart1";
-            this.out2MainValuesChart.Visible = false;
-            // 
-            // splitContainer9
-            // 
-            this.splitContainer9.BackColor = System.Drawing.Color.Transparent;
-            this.splitContainer9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer9.IsSplitterFixed = true;
-            this.splitContainer9.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer9.Name = "splitContainer9";
-            // 
-            // splitContainer9.Panel1
-            // 
-            this.splitContainer9.Panel1.Controls.Add(this.tableLayoutPanel29);
-            this.splitContainer9.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer7_Panel1_Paint);
-            this.splitContainer9.Panel1MinSize = 290;
-            // 
-            // splitContainer9.Panel2
-            // 
-            this.splitContainer9.Panel2.Controls.Add(this.tableLayoutPanel33);
-            this.splitContainer9.Panel2MinSize = 65;
-            this.splitContainer9.Size = new System.Drawing.Size(687, 173);
-            this.splitContainer9.SplitterDistance = 332;
-            this.splitContainer9.TabIndex = 1;
-            this.splitContainer9.Resize += new System.EventHandler(this.splitContainer9_Resize);
-            // 
-            // tableLayoutPanel29
-            // 
-            this.tableLayoutPanel29.ColumnCount = 1;
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel29.Controls.Add(this.tableLayoutPanel37, 0, 0);
-            this.tableLayoutPanel29.Controls.Add(this.tableLayoutPanel30, 0, 1);
-            this.tableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel29.Name = "tableLayoutPanel29";
-            this.tableLayoutPanel29.RowCount = 2;
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(330, 171);
-            this.tableLayoutPanel29.TabIndex = 0;
-            // 
-            // tableLayoutPanel37
-            // 
-            this.tableLayoutPanel37.ColumnCount = 3;
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.tableLayoutPanel37.Controls.Add(this.out3MainEnabledChckBox, 0, 0);
-            this.tableLayoutPanel37.Controls.Add(this.out3MainStatusPanel, 2, 0);
-            this.tableLayoutPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel37.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel37.Name = "tableLayoutPanel37";
-            this.tableLayoutPanel37.RowCount = 1;
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.Size = new System.Drawing.Size(324, 29);
-            this.tableLayoutPanel37.TabIndex = 4;
-            // 
-            // out3MainEnabledChckBox
-            // 
-            this.out3MainEnabledChckBox.AutoSize = true;
-            this.out3MainEnabledChckBox.BackColor = System.Drawing.Color.Transparent;
-            this.out3MainEnabledChckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out3MainEnabledChckBox.Location = new System.Drawing.Point(3, 3);
-            this.out3MainEnabledChckBox.Name = "out3MainEnabledChckBox";
-            this.out3MainEnabledChckBox.Size = new System.Drawing.Size(119, 23);
-            this.out3MainEnabledChckBox.TabIndex = 1;
-            this.out3MainEnabledChckBox.Text = "Enabled";
-            this.out3MainEnabledChckBox.UseVisualStyleBackColor = false;
-            this.out3MainEnabledChckBox.CheckedChanged += new System.EventHandler(this.out3MainEnabledChckBox_CheckedChanged);
-            // 
-            // out3MainStatusPanel
-            // 
-            this.out3MainStatusPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.out3MainStatusPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.out3MainStatusPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out3MainStatusPanel.Location = new System.Drawing.Point(253, 3);
-            this.out3MainStatusPanel.Name = "out3MainStatusPanel";
-            this.out3MainStatusPanel.Size = new System.Drawing.Size(68, 23);
-            this.out3MainStatusPanel.TabIndex = 2;
-            // 
-            // tableLayoutPanel30
-            // 
-            this.tableLayoutPanel30.ColumnCount = 3;
-            this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.28283F));
-            this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.85859F));
-            this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.85859F));
-            this.tableLayoutPanel30.Controls.Add(this.label34, 0, 2);
-            this.tableLayoutPanel30.Controls.Add(this.out3MainDesVtgNumUpDown, 2, 1);
-            this.tableLayoutPanel30.Controls.Add(this.tableLayoutPanel31, 1, 1);
-            this.tableLayoutPanel30.Controls.Add(this.tableLayoutPanel32, 1, 2);
-            this.tableLayoutPanel30.Controls.Add(this.label37, 1, 0);
-            this.tableLayoutPanel30.Controls.Add(this.label38, 2, 0);
-            this.tableLayoutPanel30.Controls.Add(this.label39, 0, 1);
-            this.tableLayoutPanel30.Controls.Add(this.out3MainDesCurrNumUpDown, 2, 2);
-            this.tableLayoutPanel30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel30.Location = new System.Drawing.Point(3, 38);
-            this.tableLayoutPanel30.Name = "tableLayoutPanel30";
-            this.tableLayoutPanel30.RowCount = 3;
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.55752F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.44248F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(324, 130);
-            this.tableLayoutPanel30.TabIndex = 0;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.Location = new System.Drawing.Point(3, 72);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(85, 58);
-            this.label34.TabIndex = 1;
-            this.label34.Text = "Current:";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // out3MainDesVtgNumUpDown
-            // 
-            this.out3MainDesVtgNumUpDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.out3MainDesVtgNumUpDown.DecimalPlaces = 2;
-            this.out3MainDesVtgNumUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out3MainDesVtgNumUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out3MainDesVtgNumUpDown.ForeColor = System.Drawing.SystemColors.Control;
-            this.out3MainDesVtgNumUpDown.Location = new System.Drawing.Point(210, 20);
-            this.out3MainDesVtgNumUpDown.Name = "out3MainDesVtgNumUpDown";
-            this.out3MainDesVtgNumUpDown.Size = new System.Drawing.Size(111, 49);
-            this.out3MainDesVtgNumUpDown.TabIndex = 8;
-            this.out3MainDesVtgNumUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tableLayoutPanel31
-            // 
-            this.tableLayoutPanel31.ColumnCount = 1;
-            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel31.Controls.Add(this.progressBar9, 0, 1);
-            this.tableLayoutPanel31.Controls.Add(this.out3MainRealVtgLbl, 0, 0);
-            this.tableLayoutPanel31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel31.Location = new System.Drawing.Point(94, 20);
-            this.tableLayoutPanel31.Name = "tableLayoutPanel31";
-            this.tableLayoutPanel31.RowCount = 2;
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.43137F));
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.56863F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(110, 49);
-            this.tableLayoutPanel31.TabIndex = 2;
-            // 
-            // progressBar9
-            // 
-            this.progressBar9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.progressBar9.Location = new System.Drawing.Point(3, 41);
-            this.progressBar9.Name = "progressBar9";
-            this.progressBar9.Size = new System.Drawing.Size(104, 5);
-            this.progressBar9.TabIndex = 0;
-            this.progressBar9.Value = 50;
-            // 
-            // out3MainRealVtgLbl
-            // 
-            this.out3MainRealVtgLbl.AutoSize = true;
-            this.out3MainRealVtgLbl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out3MainRealVtgLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out3MainRealVtgLbl.Location = new System.Drawing.Point(3, 0);
-            this.out3MainRealVtgLbl.Name = "out3MainRealVtgLbl";
-            this.out3MainRealVtgLbl.Size = new System.Drawing.Size(104, 38);
-            this.out3MainRealVtgLbl.TabIndex = 1;
-            this.out3MainRealVtgLbl.Text = "13.2";
-            this.out3MainRealVtgLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel32
-            // 
-            this.tableLayoutPanel32.ColumnCount = 1;
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel32.Controls.Add(this.progressBar10, 0, 1);
-            this.tableLayoutPanel32.Controls.Add(this.out3MainRealCurrLbl, 0, 0);
-            this.tableLayoutPanel32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel32.Location = new System.Drawing.Point(94, 75);
-            this.tableLayoutPanel32.Name = "tableLayoutPanel32";
-            this.tableLayoutPanel32.RowCount = 2;
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel32.Size = new System.Drawing.Size(110, 52);
-            this.tableLayoutPanel32.TabIndex = 3;
-            // 
-            // progressBar10
-            // 
-            this.progressBar10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.progressBar10.Location = new System.Drawing.Point(3, 44);
-            this.progressBar10.Name = "progressBar10";
-            this.progressBar10.Size = new System.Drawing.Size(104, 5);
-            this.progressBar10.TabIndex = 0;
-            this.progressBar10.Value = 10;
-            // 
-            // out3MainRealCurrLbl
-            // 
-            this.out3MainRealCurrLbl.AutoSize = true;
-            this.out3MainRealCurrLbl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out3MainRealCurrLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out3MainRealCurrLbl.Location = new System.Drawing.Point(3, 0);
-            this.out3MainRealCurrLbl.Name = "out3MainRealCurrLbl";
-            this.out3MainRealCurrLbl.Size = new System.Drawing.Size(104, 41);
-            this.out3MainRealCurrLbl.TabIndex = 1;
-            this.out3MainRealCurrLbl.Text = "1.5";
-            this.out3MainRealCurrLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label37.Location = new System.Drawing.Point(94, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(110, 17);
-            this.label37.TabIndex = 6;
-            this.label37.Text = "Real";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label38.Location = new System.Drawing.Point(210, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(111, 17);
-            this.label38.TabIndex = 7;
-            this.label38.Text = "Desired";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label39.Location = new System.Drawing.Point(3, 17);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(85, 55);
-            this.label39.TabIndex = 0;
-            this.label39.Text = "Voltage:";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // out3MainDesCurrNumUpDown
-            // 
-            this.out3MainDesCurrNumUpDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.out3MainDesCurrNumUpDown.DecimalPlaces = 2;
-            this.out3MainDesCurrNumUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out3MainDesCurrNumUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out3MainDesCurrNumUpDown.ForeColor = System.Drawing.SystemColors.Control;
-            this.out3MainDesCurrNumUpDown.Location = new System.Drawing.Point(210, 75);
-            this.out3MainDesCurrNumUpDown.Name = "out3MainDesCurrNumUpDown";
-            this.out3MainDesCurrNumUpDown.Size = new System.Drawing.Size(111, 49);
-            this.out3MainDesCurrNumUpDown.TabIndex = 9;
-            this.out3MainDesCurrNumUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tableLayoutPanel33
-            // 
-            this.tableLayoutPanel33.ColumnCount = 1;
-            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel34, 0, 0);
-            this.tableLayoutPanel33.Controls.Add(this.out3MainValuesChart, 0, 1);
-            this.tableLayoutPanel33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel33.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel33.Name = "tableLayoutPanel33";
-            this.tableLayoutPanel33.RowCount = 2;
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel33.Size = new System.Drawing.Size(349, 171);
-            this.tableLayoutPanel33.TabIndex = 2;
-            // 
-            // tableLayoutPanel34
-            // 
-            this.tableLayoutPanel34.ColumnCount = 4;
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel34.Controls.Add(this.out3PlotCurrCheckBox, 2, 0);
-            this.tableLayoutPanel34.Controls.Add(this.out3PlotChckBox, 0, 0);
-            this.tableLayoutPanel34.Controls.Add(this.out3PlotVtgChckBox, 1, 0);
-            this.tableLayoutPanel34.Controls.Add(this.out3PlotLegendChckBox, 3, 0);
-            this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel34.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel34.Name = "tableLayoutPanel34";
-            this.tableLayoutPanel34.RowCount = 1;
-            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel34.Size = new System.Drawing.Size(343, 31);
-            this.tableLayoutPanel34.TabIndex = 0;
-            // 
-            // out3PlotCurrCheckBox
-            // 
-            this.out3PlotCurrCheckBox.AutoSize = true;
-            this.out3PlotCurrCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out3PlotCurrCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out3PlotCurrCheckBox.Location = new System.Drawing.Point(147, 3);
-            this.out3PlotCurrCheckBox.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
-            this.out3PlotCurrCheckBox.Name = "out3PlotCurrCheckBox";
-            this.out3PlotCurrCheckBox.Size = new System.Drawing.Size(76, 25);
-            this.out3PlotCurrCheckBox.TabIndex = 2;
-            this.out3PlotCurrCheckBox.Text = "Current";
-            this.out3PlotCurrCheckBox.UseVisualStyleBackColor = true;
-            this.out3PlotCurrCheckBox.Visible = false;
-            this.out3PlotCurrCheckBox.CheckedChanged += new System.EventHandler(this.out3PlotCurrCheckBox_CheckedChanged);
-            // 
-            // out3PlotChckBox
-            // 
-            this.out3PlotChckBox.AutoSize = true;
-            this.out3PlotChckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out3PlotChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out3PlotChckBox.Location = new System.Drawing.Point(3, 3);
-            this.out3PlotChckBox.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
-            this.out3PlotChckBox.Name = "out3PlotChckBox";
-            this.out3PlotChckBox.Size = new System.Drawing.Size(60, 25);
-            this.out3PlotChckBox.TabIndex = 0;
-            this.out3PlotChckBox.Text = "Plot";
-            this.out3PlotChckBox.UseVisualStyleBackColor = true;
-            this.out3PlotChckBox.CheckedChanged += new System.EventHandler(this.out3PlotChckBox_CheckedChanged);
-            // 
-            // out3PlotVtgChckBox
-            // 
-            this.out3PlotVtgChckBox.AutoSize = true;
-            this.out3PlotVtgChckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out3PlotVtgChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out3PlotVtgChckBox.Location = new System.Drawing.Point(67, 3);
-            this.out3PlotVtgChckBox.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
-            this.out3PlotVtgChckBox.Name = "out3PlotVtgChckBox";
-            this.out3PlotVtgChckBox.Size = new System.Drawing.Size(76, 25);
-            this.out3PlotVtgChckBox.TabIndex = 1;
-            this.out3PlotVtgChckBox.Text = "Voltage";
-            this.out3PlotVtgChckBox.UseVisualStyleBackColor = true;
-            this.out3PlotVtgChckBox.Visible = false;
-            this.out3PlotVtgChckBox.CheckedChanged += new System.EventHandler(this.out3PlotVtgChckBox_CheckedChanged);
-            // 
-            // out3PlotLegendChckBox
-            // 
-            this.out3PlotLegendChckBox.AutoSize = true;
-            this.out3PlotLegendChckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.out3PlotLegendChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.out3PlotLegendChckBox.Location = new System.Drawing.Point(227, 3);
-            this.out3PlotLegendChckBox.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            this.out3PlotLegendChckBox.Name = "out3PlotLegendChckBox";
-            this.out3PlotLegendChckBox.Size = new System.Drawing.Size(116, 25);
-            this.out3PlotLegendChckBox.TabIndex = 3;
-            this.out3PlotLegendChckBox.Text = "Legend";
-            this.out3PlotLegendChckBox.UseVisualStyleBackColor = true;
-            this.out3PlotLegendChckBox.Visible = false;
-            this.out3PlotLegendChckBox.CheckedChanged += new System.EventHandler(this.out3PlotLegendChckBox_CheckedChanged);
-            // 
-            // out3MainValuesChart
-            // 
-            this.out3MainValuesChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.out3MainValuesChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea8.AxisX.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisX.LineColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisX.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea8.AxisX.MajorTickMark.Interval = 50D;
-            chartArea8.AxisX.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisX.Minimum = 0D;
-            chartArea8.AxisX2.Minimum = 0D;
-            chartArea8.AxisY.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisY.LineColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisY.MajorGrid.Interval = 5D;
-            chartArea8.AxisY.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea8.AxisY.MajorTickMark.Interval = 5D;
-            chartArea8.AxisY.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisY.Maximum = 25D;
-            chartArea8.AxisY.Minimum = 0D;
-            chartArea8.AxisY2.LabelStyle.ForeColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisY2.LineColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisY2.MajorGrid.Enabled = false;
-            chartArea8.AxisY2.MajorGrid.Interval = 50D;
-            chartArea8.AxisY2.MajorGrid.LineColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisY2.MajorTickMark.Interval = 0D;
-            chartArea8.AxisY2.MajorTickMark.LineColor = System.Drawing.SystemColors.Control;
-            chartArea8.AxisY2.Maximum = 11D;
-            chartArea8.AxisY2.Minimum = 0D;
-            chartArea8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            chartArea8.Name = "ChartArea1";
-            this.out3MainValuesChart.ChartAreas.Add(chartArea8);
-            this.out3MainValuesChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            legend8.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            legend8.ForeColor = System.Drawing.SystemColors.Control;
-            legend8.ItemColumnSpacing = 15;
-            legend8.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
-            legend8.Name = "Legend1";
-            legend8.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide;
-            this.out3MainValuesChart.Legends.Add(legend8);
-            this.out3MainValuesChart.Location = new System.Drawing.Point(3, 40);
-            this.out3MainValuesChart.Name = "out3MainValuesChart";
-            series15.ChartArea = "ChartArea1";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series15.IsVisibleInLegend = false;
-            series15.Legend = "Legend1";
-            series15.LegendText = "Voltage";
-            series15.LegendToolTip = "Output 1 voltage";
-            series15.Name = "out3MainChartVoltage";
-            series16.ChartArea = "ChartArea1";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series16.IsVisibleInLegend = false;
-            series16.Legend = "Legend1";
-            series16.LegendText = "Current";
-            series16.LegendToolTip = "Output 1 current";
-            series16.Name = "out3MainChartCurrent";
-            series16.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            this.out3MainValuesChart.Series.Add(series15);
-            this.out3MainValuesChart.Series.Add(series16);
-            this.out3MainValuesChart.Size = new System.Drawing.Size(343, 128);
-            this.out3MainValuesChart.TabIndex = 1;
-            this.out3MainValuesChart.Text = "chart1";
-            this.out3MainValuesChart.Visible = false;
             // 
             // regOutputsMenuStrip
             // 
@@ -5058,6 +3633,536 @@
             this.toolStripMenuItem25.Size = new System.Drawing.Size(142, 26);
             this.toolStripMenuItem25.Text = "&About...";
             // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
+            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.newToolStripMenuItem.Text = "&New";
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.openToolStripMenuItem.Text = "&Open";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.saveToolStripMenuItem.Text = "&Save";
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.printToolStripMenuItem.Text = "&Print";
+            // 
+            // printPreviewToolStripMenuItem
+            // 
+            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
+            this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
+            // 
+            // cutToolStripMenuItem
+            // 
+            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
+            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.cutToolStripMenuItem.Text = "Cu&t";
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
+            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.copyToolStripMenuItem.Text = "&Copy";
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
+            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.pasteToolStripMenuItem.Text = "&Paste";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.optionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.optionsToolStripMenuItem.Image = global::DCDC_Manager.Properties.Resources.settings_icon;
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
+            this.optionsToolStripMenuItem.Text = "&Options";
+            // 
+            // batteryBtn
+            // 
+            this.batteryBtn.BackColor = System.Drawing.Color.Transparent;
+            this.batteryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.batteryBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.batteryBtn.Image = global::DCDC_Manager.Properties.Resources.Status_battery_missing_icon;
+            this.batteryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.batteryBtn.Location = new System.Drawing.Point(3, 3);
+            this.batteryBtn.Name = "batteryBtn";
+            this.batteryBtn.Size = new System.Drawing.Size(108, 43);
+            this.batteryBtn.TabIndex = 0;
+            this.batteryBtn.Text = "BATT";
+            this.batteryBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.batteryBtn.UseVisualStyleBackColor = false;
+            // 
+            // toolStripStatusLabel13
+            // 
+            this.toolStripStatusLabel13.Image = global::DCDC_Manager.Properties.Resources.log_icon;
+            this.toolStripStatusLabel13.Name = "toolStripStatusLabel13";
+            this.toolStripStatusLabel13.Size = new System.Drawing.Size(26, 17);
+            this.toolStripStatusLabel13.Text = " ";
+            this.toolStripStatusLabel13.Visible = false;
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.AutoToolTip = true;
+            this.toolStripMenuItem1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.toolStripMenuItem1.Checked = true;
+            this.toolStripMenuItem1.CheckOnClick = true;
+            this.toolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.toolStripMenuItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.Transparent;
+            this.toolStripMenuItem1.Image = global::DCDC_Manager.Properties.Resources.chart_curve_icon;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(28, 28);
+            this.toolStripMenuItem1.ToolTipText = "Show / hide chart.";
+            this.toolStripMenuItem1.CheckedChanged += new System.EventHandler(this.toolStripMenuItem1_CheckedChanged);
+            // 
+            // toolStripMenuItem45
+            // 
+            this.toolStripMenuItem45.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem45.Image")));
+            this.toolStripMenuItem45.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem45.Name = "toolStripMenuItem45";
+            this.toolStripMenuItem45.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem45.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.toolStripMenuItem45.Size = new System.Drawing.Size(176, 26);
+            this.toolStripMenuItem45.Text = "&New";
+            this.toolStripMenuItem45.Visible = false;
+            // 
+            // toolStripMenuItem46
+            // 
+            this.toolStripMenuItem46.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem46.Image")));
+            this.toolStripMenuItem46.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem46.Name = "toolStripMenuItem46";
+            this.toolStripMenuItem46.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem46.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.toolStripMenuItem46.Size = new System.Drawing.Size(176, 26);
+            this.toolStripMenuItem46.Text = "&Open";
+            this.toolStripMenuItem46.Visible = false;
+            // 
+            // toolStripMenuItem47
+            // 
+            this.toolStripMenuItem47.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem47.Image")));
+            this.toolStripMenuItem47.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem47.Name = "toolStripMenuItem47";
+            this.toolStripMenuItem47.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem47.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.toolStripMenuItem47.Size = new System.Drawing.Size(176, 26);
+            this.toolStripMenuItem47.Text = "&Save";
+            // 
+            // toolStripMenuItem49
+            // 
+            this.toolStripMenuItem49.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem49.Image")));
+            this.toolStripMenuItem49.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem49.Name = "toolStripMenuItem49";
+            this.toolStripMenuItem49.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem49.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.toolStripMenuItem49.Size = new System.Drawing.Size(176, 26);
+            this.toolStripMenuItem49.Text = "&Print";
+            // 
+            // toolStripMenuItem50
+            // 
+            this.toolStripMenuItem50.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem50.Image")));
+            this.toolStripMenuItem50.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem50.Name = "toolStripMenuItem50";
+            this.toolStripMenuItem50.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem50.Size = new System.Drawing.Size(176, 26);
+            this.toolStripMenuItem50.Text = "Print Pre&view";
+            // 
+            // battLogToolStripMenuItem
+            // 
+            this.battLogToolStripMenuItem.CheckOnClick = true;
+            this.battLogToolStripMenuItem.Image = global::DCDC_Manager.Properties.Resources.log_icon;
+            this.battLogToolStripMenuItem.Name = "battLogToolStripMenuItem";
+            this.battLogToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.battLogToolStripMenuItem.Text = "&Log";
+            this.battLogToolStripMenuItem.Visible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::DCDC_Manager.Properties.Resources.settings_icon;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(26, 17);
+            this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::DCDC_Manager.Properties.Resources.Users_Exit_icon;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(121, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(24, 17);
+            this.panel2.TabIndex = 2;
+            this.panel2.Visible = false;
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem6.CheckOnClick = true;
+            this.toolStripMenuItem6.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logfileToolStripMenuItem,
+            this.voltageToolStripMenuItem,
+            this.currentToolStripMenuItem});
+            this.toolStripMenuItem6.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem6.Image = global::DCDC_Manager.Properties.Resources.log_icon;
+            this.toolStripMenuItem6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem6.ShowShortcutKeys = false;
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(172, 26);
+            this.toolStripMenuItem6.Text = "&Log";
+            this.toolStripMenuItem6.CheckedChanged += new System.EventHandler(this.toolStripMenuItem6_CheckedChanged);
+            // 
+            // logfileToolStripMenuItem
+            // 
+            this.logfileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.logfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileNameToolStripMenuItem40});
+            this.logfileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.logfileToolStripMenuItem.Name = "logfileToolStripMenuItem";
+            this.logfileToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.logfileToolStripMenuItem.Text = "Log &file";
+            // 
+            // fileNameToolStripMenuItem40
+            // 
+            this.fileNameToolStripMenuItem40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.fileNameToolStripMenuItem40.ForeColor = System.Drawing.SystemColors.Control;
+            this.fileNameToolStripMenuItem40.Name = "fileNameToolStripMenuItem40";
+            this.fileNameToolStripMenuItem40.Size = new System.Drawing.Size(143, 26);
+            this.fileNameToolStripMenuItem40.Text = "fileName";
+            this.fileNameToolStripMenuItem40.Click += new System.EventHandler(this.fileNameToolStripMenuItem40_Click);
+            // 
+            // voltageToolStripMenuItem
+            // 
+            this.voltageToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.voltageToolStripMenuItem.CheckOnClick = true;
+            this.voltageToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.voltageToolStripMenuItem.Name = "voltageToolStripMenuItem";
+            this.voltageToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.voltageToolStripMenuItem.Text = "Voltage";
+            // 
+            // currentToolStripMenuItem
+            // 
+            this.currentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.currentToolStripMenuItem.CheckOnClick = true;
+            this.currentToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.currentToolStripMenuItem.Name = "currentToolStripMenuItem";
+            this.currentToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.currentToolStripMenuItem.Text = "Current";
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem8.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem8.Image")));
+            this.toolStripMenuItem8.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem8.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(172, 26);
+            this.toolStripMenuItem8.Text = "&Save";
+            this.toolStripMenuItem8.Visible = false;
+            // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem12.Image")));
+            this.toolStripMenuItem12.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
+            this.toolStripMenuItem12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem12.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(172, 26);
+            this.toolStripMenuItem12.Text = "&Print";
+            this.toolStripMenuItem12.Visible = false;
+            // 
+            // toolStripMenuItem13
+            // 
+            this.toolStripMenuItem13.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem13.Image")));
+            this.toolStripMenuItem13.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem13.Name = "toolStripMenuItem13";
+            this.toolStripMenuItem13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(172, 26);
+            this.toolStripMenuItem13.Text = "Print Pre&view";
+            this.toolStripMenuItem13.Visible = false;
+            // 
+            // toolStripMenuItem15
+            // 
+            this.toolStripMenuItem15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem15.CheckOnClick = true;
+            this.toolStripMenuItem15.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem26,
+            this.toolStripMenuItem27,
+            this.toolStripSeparator15,
+            this.toolStripMenuItem28,
+            this.toolStripMenuItem29,
+            this.toolStripMenuItem30,
+            this.toolStripSeparator16,
+            this.toolStripMenuItem34});
+            this.toolStripMenuItem15.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem15.Image = global::DCDC_Manager.Properties.Resources.log_icon;
+            this.toolStripMenuItem15.Name = "toolStripMenuItem15";
+            this.toolStripMenuItem15.Size = new System.Drawing.Size(64, 25);
+            this.toolStripMenuItem15.Text = "&Log";
+            this.toolStripMenuItem15.Visible = false;
+            // 
+            // toolStripMenuItem26
+            // 
+            this.toolStripMenuItem26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem26.Checked = true;
+            this.toolStripMenuItem26.CheckOnClick = true;
+            this.toolStripMenuItem26.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.toolStripMenuItem26.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem26.Name = "toolStripMenuItem26";
+            this.toolStripMenuItem26.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem26.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.toolStripMenuItem26.Size = new System.Drawing.Size(188, 26);
+            this.toolStripMenuItem26.Text = "&Voltage";
+            // 
+            // toolStripMenuItem27
+            // 
+            this.toolStripMenuItem27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem27.Checked = true;
+            this.toolStripMenuItem27.CheckOnClick = true;
+            this.toolStripMenuItem27.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.toolStripMenuItem27.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem27.Name = "toolStripMenuItem27";
+            this.toolStripMenuItem27.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem27.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.toolStripMenuItem27.Size = new System.Drawing.Size(188, 26);
+            this.toolStripMenuItem27.Text = "&Current";
+            // 
+            // toolStripSeparator15
+            // 
+            this.toolStripSeparator15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripSeparator15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripSeparator15.Name = "toolStripSeparator15";
+            this.toolStripSeparator15.Size = new System.Drawing.Size(185, 6);
+            // 
+            // toolStripMenuItem28
+            // 
+            this.toolStripMenuItem28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem28.CheckOnClick = true;
+            this.toolStripMenuItem28.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem28.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem28.Name = "toolStripMenuItem28";
+            this.toolStripMenuItem28.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem28.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.toolStripMenuItem28.Size = new System.Drawing.Size(188, 26);
+            this.toolStripMenuItem28.Text = "&Legend";
+            // 
+            // toolStripMenuItem29
+            // 
+            this.toolStripMenuItem29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem29.CheckOnClick = true;
+            this.toolStripMenuItem29.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox1});
+            this.toolStripMenuItem29.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem29.Name = "toolStripMenuItem29";
+            this.toolStripMenuItem29.Size = new System.Drawing.Size(188, 26);
+            this.toolStripMenuItem29.Text = "&Title";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.toolStripTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.toolStripTextBox1.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox1.Text = "Output  1";
+            // 
+            // toolStripMenuItem30
+            // 
+            this.toolStripMenuItem30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem30.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem31,
+            this.toolStripMenuItem32,
+            this.toolStripMenuItem33});
+            this.toolStripMenuItem30.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem30.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem30.Name = "toolStripMenuItem30";
+            this.toolStripMenuItem30.ShowShortcutKeys = false;
+            this.toolStripMenuItem30.Size = new System.Drawing.Size(188, 26);
+            this.toolStripMenuItem30.Text = "&Axis";
+            // 
+            // toolStripMenuItem31
+            // 
+            this.toolStripMenuItem31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem31.Checked = true;
+            this.toolStripMenuItem31.CheckOnClick = true;
+            this.toolStripMenuItem31.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.toolStripMenuItem31.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem31.Name = "toolStripMenuItem31";
+            this.toolStripMenuItem31.Size = new System.Drawing.Size(153, 26);
+            this.toolStripMenuItem31.Text = "&Labels";
+            // 
+            // toolStripMenuItem32
+            // 
+            this.toolStripMenuItem32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem32.Checked = true;
+            this.toolStripMenuItem32.CheckOnClick = true;
+            this.toolStripMenuItem32.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.toolStripMenuItem32.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem32.Name = "toolStripMenuItem32";
+            this.toolStripMenuItem32.Size = new System.Drawing.Size(153, 26);
+            this.toolStripMenuItem32.Text = "Primary";
+            // 
+            // toolStripMenuItem33
+            // 
+            this.toolStripMenuItem33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem33.CheckOnClick = true;
+            this.toolStripMenuItem33.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem33.Name = "toolStripMenuItem33";
+            this.toolStripMenuItem33.Size = new System.Drawing.Size(153, 26);
+            this.toolStripMenuItem33.Text = "Secondary";
+            // 
+            // toolStripSeparator16
+            // 
+            this.toolStripSeparator16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripSeparator16.Name = "toolStripSeparator16";
+            this.toolStripSeparator16.Size = new System.Drawing.Size(185, 6);
+            // 
+            // toolStripMenuItem34
+            // 
+            this.toolStripMenuItem34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStripMenuItem34.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem34.Name = "toolStripMenuItem34";
+            this.toolStripMenuItem34.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem34.Size = new System.Drawing.Size(188, 26);
+            this.toolStripMenuItem34.Text = "Select &All";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.BackColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusLabel1.Image = global::DCDC_Manager.Properties.Resources.switch_on_icon;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(56, 17);
+            this.toolStripStatusLabel1.Text = "OUT 1";
+            // 
+            // out1MainInfoTsSl
+            // 
+            this.out1MainInfoTsSl.Image = global::DCDC_Manager.Properties.Resources.log_icon;
+            this.out1MainInfoTsSl.Name = "out1MainInfoTsSl";
+            this.out1MainInfoTsSl.Size = new System.Drawing.Size(26, 17);
+            this.out1MainInfoTsSl.Text = " ";
+            this.out1MainInfoTsSl.Visible = false;
+            // 
+            // toolStripMenuItem41
+            // 
+            this.toolStripMenuItem41.AutoToolTip = true;
+            this.toolStripMenuItem41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.toolStripMenuItem41.CheckOnClick = true;
+            this.toolStripMenuItem41.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripMenuItem41.ForeColor = System.Drawing.Color.Transparent;
+            this.toolStripMenuItem41.Image = global::DCDC_Manager.Properties.Resources.chart_curve_icon;
+            this.toolStripMenuItem41.Name = "toolStripMenuItem41";
+            this.toolStripMenuItem41.Size = new System.Drawing.Size(25, 20);
+            this.toolStripMenuItem41.ToolTipText = "Show / hide chart.";
+            this.toolStripMenuItem41.CheckedChanged += new System.EventHandler(this.toolStripMenuItem41_CheckedChanged);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
+            this.toolStripMenuItem4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem4.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(176, 26);
+            this.toolStripMenuItem4.Text = "&New";
+            this.toolStripMenuItem4.Visible = false;
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
+            this.toolStripMenuItem5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem5.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(176, 26);
+            this.toolStripMenuItem5.Text = "&Open";
+            this.toolStripMenuItem5.Visible = false;
+            // 
+            // out1MainChartSaveToolStripMenuItem
+            // 
+            this.out1MainChartSaveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("out1MainChartSaveToolStripMenuItem.Image")));
+            this.out1MainChartSaveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.out1MainChartSaveToolStripMenuItem.Name = "out1MainChartSaveToolStripMenuItem";
+            this.out1MainChartSaveToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.out1MainChartSaveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.out1MainChartSaveToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.out1MainChartSaveToolStripMenuItem.Text = "&Save";
+            this.out1MainChartSaveToolStripMenuItem.Click += new System.EventHandler(this.out1MainChartSaveToolStripMenuItem_Click);
+            // 
+            // out1MainChartPrintToolStripMenuItem
+            // 
+            this.out1MainChartPrintToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("out1MainChartPrintToolStripMenuItem.Image")));
+            this.out1MainChartPrintToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.out1MainChartPrintToolStripMenuItem.Name = "out1MainChartPrintToolStripMenuItem";
+            this.out1MainChartPrintToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.out1MainChartPrintToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.out1MainChartPrintToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.out1MainChartPrintToolStripMenuItem.Text = "&Print";
+            this.out1MainChartPrintToolStripMenuItem.Click += new System.EventHandler(this.out1MainChartPrintToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem9.Image")));
+            this.toolStripMenuItem9.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(176, 26);
+            this.toolStripMenuItem9.Text = "Print Pre&view";
+            // 
+            // outputPanelContainer1
+            // 
+            this.outputPanelContainer1.AutoSize = true;
+            this.outputPanelContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.outputPanelContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.outputPanelContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.outputPanelContainer1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.outputPanelContainer1.ForeColor = System.Drawing.SystemColors.Control;
+            this.outputPanelContainer1.Location = new System.Drawing.Point(0, 0);
+            this.outputPanelContainer1.MinimumSize = new System.Drawing.Size(2, 52);
+            this.outputPanelContainer1.Name = "outputPanelContainer1";
+            this.outputPanelContainer1.Size = new System.Drawing.Size(687, 179);
+            this.outputPanelContainer1.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -5188,47 +4293,9 @@
             this.out1MainChartMenuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.out1MainValuesChart)).EndInit();
             this.splitContainer12.Panel1.ResumeLayout(false);
-            this.splitContainer12.Panel2.ResumeLayout(false);
+            this.splitContainer12.Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).EndInit();
             this.splitContainer12.ResumeLayout(false);
-            this.splitContainer8.Panel1.ResumeLayout(false);
-            this.splitContainer8.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
-            this.splitContainer8.ResumeLayout(false);
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel36.ResumeLayout(false);
-            this.tableLayoutPanel36.PerformLayout();
-            this.tableLayoutPanel24.ResumeLayout(false);
-            this.tableLayoutPanel24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out2MainDesVtgNumUpDown)).EndInit();
-            this.tableLayoutPanel25.ResumeLayout(false);
-            this.tableLayoutPanel25.PerformLayout();
-            this.tableLayoutPanel26.ResumeLayout(false);
-            this.tableLayoutPanel26.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out2MainDesCurrNumUpDown)).EndInit();
-            this.tableLayoutPanel27.ResumeLayout(false);
-            this.tableLayoutPanel28.ResumeLayout(false);
-            this.tableLayoutPanel28.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out2MainValuesChart)).EndInit();
-            this.splitContainer9.Panel1.ResumeLayout(false);
-            this.splitContainer9.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer9)).EndInit();
-            this.splitContainer9.ResumeLayout(false);
-            this.tableLayoutPanel29.ResumeLayout(false);
-            this.tableLayoutPanel37.ResumeLayout(false);
-            this.tableLayoutPanel37.PerformLayout();
-            this.tableLayoutPanel30.ResumeLayout(false);
-            this.tableLayoutPanel30.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out3MainDesVtgNumUpDown)).EndInit();
-            this.tableLayoutPanel31.ResumeLayout(false);
-            this.tableLayoutPanel31.PerformLayout();
-            this.tableLayoutPanel32.ResumeLayout(false);
-            this.tableLayoutPanel32.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out3MainDesCurrNumUpDown)).EndInit();
-            this.tableLayoutPanel33.ResumeLayout(false);
-            this.tableLayoutPanel34.ResumeLayout(false);
-            this.tableLayoutPanel34.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out3MainValuesChart)).EndInit();
             this.regOutputsMenuStrip.ResumeLayout(false);
             this.regOutputsMenuStrip.PerformLayout();
             this.tableLayoutPanel10.ResumeLayout(false);
@@ -5361,56 +4428,6 @@
         private System.Windows.Forms.NumericUpDown out1MainDesVtgIntNumUpDown;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
         private System.Windows.Forms.DataVisualization.Charting.Chart out1MainValuesChart;
-        private System.Windows.Forms.SplitContainer splitContainer9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel29;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel30;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.NumericUpDown out3MainDesVtgNumUpDown;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel31;
-        private System.Windows.Forms.ProgressBar progressBar9;
-        private System.Windows.Forms.Label out3MainRealVtgLbl;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel32;
-        private System.Windows.Forms.ProgressBar progressBar10;
-        private System.Windows.Forms.Label out3MainRealCurrLbl;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.NumericUpDown out3MainDesCurrNumUpDown;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel33;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel34;
-        private System.Windows.Forms.CheckBox out3PlotCurrCheckBox;
-        private System.Windows.Forms.CheckBox out3PlotChckBox;
-        private System.Windows.Forms.CheckBox out3PlotVtgChckBox;
-        private System.Windows.Forms.CheckBox out3PlotLegendChckBox;
-        private System.Windows.Forms.DataVisualization.Charting.Chart out3MainValuesChart;
-        private System.Windows.Forms.SplitContainer splitContainer8;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.NumericUpDown out2MainDesVtgNumUpDown;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel25;
-        private System.Windows.Forms.ProgressBar progressBar7;
-        private System.Windows.Forms.Label out2MainRealVtgLbl;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel26;
-        private System.Windows.Forms.ProgressBar progressBar8;
-        private System.Windows.Forms.Label out2MainRealCurrLbl;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.NumericUpDown out2MainDesCurrNumUpDown;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel27;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel28;
-        private System.Windows.Forms.CheckBox out2PlotCurrCheckBox;
-        private System.Windows.Forms.CheckBox out2PlotChckBox;
-        private System.Windows.Forms.CheckBox out2PlotVtgChckBox;
-        private System.Windows.Forms.CheckBox out2PlotLegendChckBox;
-        private System.Windows.Forms.DataVisualization.Charting.Chart out2MainValuesChart;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel37;
-        private System.Windows.Forms.CheckBox out3MainEnabledChckBox;
-        private System.Windows.Forms.Panel out3MainStatusPanel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel36;
-        private System.Windows.Forms.CheckBox out2MainEnabledChckBox;
-        private System.Windows.Forms.Panel out2MainStatusPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel35;
         private System.Windows.Forms.Panel out1MainStatusPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel38;
@@ -5612,6 +4629,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private OutputPanelContainer outputPanelContainer1;
     }
 }
 

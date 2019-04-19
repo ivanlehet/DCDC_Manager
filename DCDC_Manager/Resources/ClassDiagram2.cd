@@ -3,7 +3,7 @@
   <Class Name="DCDC_Manager.CommonProperties">
     <Position X="7" Y="0.75" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgACAACCAAAAAAAACAQAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgACAACAAAAAAAAACAQAABAAAAAA=</HashCode>
       <FileName>CommonItems.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -71,7 +71,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DCDC_Manager.WiFi">
-    <Position X="18.5" Y="5" Width="3" />
+    <Position X="18.25" Y="5" Width="3" />
     <TypeIdentifier>
       <HashCode>EQQAAAAAAAAAAABAAGAAAACIAAAAAAACASAAAAAAAAA=</HashCode>
       <FileName>WiFi.cs</FileName>
@@ -115,7 +115,7 @@
       <FileName>IWritableProperty.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="DCDC_Manager.IWatchDog" Collapsed="true">
+  <Interface Name="DCDC_Manager.IWatchDog">
     <Position X="10.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAACAAAAAAAIAAACAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -127,6 +127,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IReadableProperty.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DCDC_Manager.IOutput">
+    <Position X="16" Y="3" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAEAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOutput.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="DCDC_Manager.SourceStatus">
