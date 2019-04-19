@@ -12,17 +12,25 @@ namespace DCDC_Manager
         private T _value;
         private double _timeStamp=0.0;
 
-        public PSValue()
-        {
-            this.Port = new SerialPort();
-         
-        }
+    
 
+        public override string ToString()
+        {
+
+     
+            if(_value.GetType() == typeof(double))
+            {
+                return String.Format("{0:F3}",this._value.ToString());
+            }
+
+            return base.ToString();
+       
+        }
 
         public T Value
         {
             get
-            {
+            { 
                 return this._value;
 
             }
@@ -42,24 +50,6 @@ namespace DCDC_Manager
           
         }
 
-        public override void read()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override void write()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override string getReadQuery()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override string getWriteQuery()
-        {
-            throw new System.NotImplementedException();
-        }
+    
     }
 }

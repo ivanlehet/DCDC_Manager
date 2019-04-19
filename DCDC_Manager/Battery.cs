@@ -7,17 +7,17 @@ using DCDC_Manager;
 
 namespace DCDC_Manager
 {
-    public class Battery : Source
+    public class Battery : Source, IReadableProperty, IWritableProperty
     {
         public Battery() : base(SourceType.Battery) { }
 
-        public Battery(Source battery) : base(battery,SourceType.Battery) {   }
-   
+        public Battery(Source battery) : base(battery, SourceType.Battery) { }
 
-        public Battery(Source battery, ref SerialPort port) : base(battery, ref port,SourceType.Battery) {  }
-     
 
-              
+        public Battery(Source battery, ref SerialPort port) : base(battery, ref port, SourceType.Battery) { }
+
+
+
 
         public override SourceType Type
         {
@@ -28,9 +28,9 @@ namespace DCDC_Manager
 
         }
 
-      
 
-       
+
+
 
         public override void read()
         {
@@ -47,7 +47,7 @@ namespace DCDC_Manager
             throw new System.NotImplementedException();
         }
 
-        public override string getWriteQuery()
+         public override string getWriteQuery()
         {
             throw new System.NotImplementedException();
         }

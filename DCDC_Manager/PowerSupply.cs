@@ -8,7 +8,7 @@ namespace DCDC_Manager
     /// <summary>
     /// Class provides interfacing with power supply.
     /// </summary>
-    public class PowerSupply : WatchDog 
+    public class PowerSupply : WatchDog, IWritableProperty, IReadableProperty
     {
         private List<Output> _outputs;
         private List<Source> _sources;
@@ -17,7 +17,7 @@ namespace DCDC_Manager
 
         public PowerSupply()
         {
-         
+
         }
 
         /// <summary>
@@ -91,12 +91,12 @@ namespace DCDC_Manager
         /// <summary>
         /// Write all power supply values to MCU
         /// </summary>
-        public override void write()
+        public  void write()
         {
             throw new System.NotImplementedException();
         }
 
-        public override string getWriteQuery()
+        public  string getWriteQuery()
         {
             throw new System.NotImplementedException();
         }

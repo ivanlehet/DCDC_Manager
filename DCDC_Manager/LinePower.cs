@@ -5,9 +5,9 @@ using System.Text;
 
 namespace DCDC_Manager
 {
-    public class LinePower : Source
+    public class LinePower : Source, IReadableProperty, IWritableProperty
     {
- 
+
 
         public LinePower()
         {
@@ -19,24 +19,17 @@ namespace DCDC_Manager
 
         public LinePower(Source line, System.IO.Ports.SerialPort port)
         {
-      
+
         }
-
-
-
-
 
         public override SourceType Type
         {
             get
             {
-                return SourceType.Line;
+                return base._type;
             }
 
-
         }
-
-
 
         public override PSValue<SourceStatus> Status
         {

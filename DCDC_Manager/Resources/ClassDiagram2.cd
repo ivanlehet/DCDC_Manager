@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
   <Class Name="DCDC_Manager.CommonProperties">
-    <Position X="7.75" Y="0.75" Width="3.75" />
+    <Position X="7" Y="0.75" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAgAgCCAACAAAAAAAAACAQAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgACAACCAAAAAAAACAQAABAAAAAA=</HashCode>
       <FileName>CommonItems.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="DCDC_Manager.PanelContainer">
     <Position X="18.75" Y="10.25" Width="2.5" />
@@ -15,11 +16,12 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DCDC_Manager.Output">
-    <Position X="13.5" Y="5" Width="3" />
+    <Position X="13.25" Y="5.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAABAABAAAAAACEAACCAAAAAAAASBQAAAAAAAAA=</HashCode>
       <FileName>Output.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="DCDC_Manager.PowerSupply">
     <Position X="7.5" Y="5" Width="3.5" />
@@ -27,42 +29,46 @@
       <HashCode>BAAAAAAAEAIAAAIgACAAAACAAAAQAAACAQAAAAQAAAA=</HashCode>
       <FileName>PowerSupply.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="DCDC_Manager.WatchDog">
     <Position X="12.75" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>BAAAEAIAAAAgCAgAACAAIACACAAQAAACAQAAAAAAAAA=</HashCode>
+      <HashCode>BAAAEAIAAAAgCAgAACAAIACACAAQAAAAAAAAAAAAAAA=</HashCode>
       <FileName>WatchDog.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="DCDC_Manager.PSValue&lt;T&gt;">
-    <Position X="16.5" Y="0.75" Width="2.5" />
+    <Position X="16" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>EBAAAACAAAAAAAAAACAAAACAAAAAAAACAQAgAAAAAAA=</HashCode>
+      <HashCode>EBAAAACAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>PSValue.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DCDC_Manager.Source">
-    <Position X="9.75" Y="10" Width="3.5" />
+    <Position X="9.75" Y="10" Width="4" />
     <TypeIdentifier>
-      <HashCode>BEAQAAAEQAABkAQAACAAAACAAAAAEAGCAQgAAAgAAAI=</HashCode>
+      <HashCode>AEAAAAAEAAAAAAQAACAAAACAAAAAEAACAQgAAAAAAAA=</HashCode>
       <FileName>Source.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DCDC_Manager.Battery">
-    <Position X="7.5" Y="16.25" Width="2.75" />
+    <Position X="7.75" Y="17" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAACAAAACAAAAAAAACAQAAAAAAAAA=</HashCode>
       <FileName>Battery.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="DCDC_Manager.LinePower">
-    <Position X="12.25" Y="16.25" Width="3" />
+    <Position X="12.5" Y="17" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAAAAAACAAAACAAAAAAAACAQAAAAAAAAA=</HashCode>
       <FileName>LinePower.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="DCDC_Manager.WiFi">
     <Position X="18.5" Y="5" Width="3" />
@@ -70,22 +76,60 @@
       <HashCode>EQQAAAAAAAAAAABAAGAAAACIAAAAAAACASAAAAAAAAA=</HashCode>
       <FileName>WiFi.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="DCDC_Manager.IPanel" Collapsed="true">
-    <Position X="20.75" Y="1.5" Width="1.5" />
+  <Class Name="DCDC_Manager.DesiredProperties">
+    <Position X="4" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAAAAAAAA=</HashCode>
+      <FileName>DesiredProperties.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCDC_Manager.RealProperties">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RealProperties.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="DCDC_Manager.IPanel">
+    <Position X="19.5" Y="0.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACCAAAAAEAAAAAAAAAAAAAAAAwAAAAAA=</HashCode>
       <FileName>IPanel.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="DCDC_Manager.ISource" Collapsed="true">
-    <Position X="22.75" Y="1.5" Width="1.5" />
+  <Interface Name="DCDC_Manager.ISource">
+    <Position X="23" Y="0.5" Width="3" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAABEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>ISource.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="DCDC_Manager.SourceStatus" Collapsed="true">
+  <Interface Name="DCDC_Manager.IWritableProperty" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAAAAAAAA=</HashCode>
+      <FileName>IWritableProperty.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DCDC_Manager.IWatchDog" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAACAAAAAAAIAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IWatchDog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DCDC_Manager.IReadableProperty" Collapsed="true">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IReadableProperty.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DCDC_Manager.SourceStatus">
     <Position X="20.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>

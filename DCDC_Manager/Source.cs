@@ -15,40 +15,23 @@ namespace DCDC_Manager
     /// CommonProperties
     /// WatchDog
     /// </remarks>
-    public abstract class Source : Output, ISource
+    public abstract class Source : Output, ISource, IWritableProperty, IReadableProperty
     {
-        protected CommonProperties _details;
-        protected PSValue<bool> _selected;
+        
+ 
         protected SourceType _type;
         protected PSValue<SourceStatus> _status;
-        protected int _batteryId;
-        protected int _lineId;
-        protected int _solarId;
 
-        protected Source() { }
+
+
+
+        protected Source() : base() { }
         protected Source(Source source)
         {
             fill(source);
-            updateSourceCounter(source.Type);
+
         }
 
-        protected virtual void updateSourceCounter(SourceType type)
-        {
-            switch (type)
-            {
-                case SourceType.Battery:
-                    this._batteryId++;
-                    break;
-                case SourceType.Line:
-                    this._lineId++;
-                    break;
-                case SourceType.Solar:
-                    this._solarId++;
-                    break;
-                
-                  
-            }
-        }
 
         public Source(SourceType type)
         {
@@ -72,15 +55,17 @@ namespace DCDC_Manager
             this._type = type;
         }
 
-        void fill(Source source)
+
+
+        public void fill(Source source)
         {
             if (source != null)
             {
 
-                this.Details = source.Details;
+               
                 this.IsAutoUpdate = source.IsAutoUpdate;
-                this.IsSelected = source.IsSelected;
-                this.Port = source.Port;
+               
+                this.Port =  source.Port;
                 this.ReadyToUpdate = source.ReadyToUpdate;
                 this.Status = source.Status;
                 this.Type = source.Type;
@@ -102,63 +87,8 @@ namespace DCDC_Manager
             this._type = type;
         }
 
-        /// <summary>
-        /// Holds ID of the current object in collection
-        /// </summary>
-        public virtual int ID
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
-            {
-            }
-        }
-        public CommonProperties Details
-        {
-            get
-            {
-                return this._details;
-            }
 
-            set
-            {
-                this._details = value;
-            }
-        }
-
-        /// <summary>
-        /// True if the current power source is selected
-        /// </summary>
-        public bool IsSelected
-        {
-            get
-            {
-                return this._selected.Value;
-            }
-
-            set
-            {
-                this._selected.Value = value;
-            }
-        }
-
-        /// <summary>
-        /// Power supply Selected property object
-        /// </summary>
-        public PSValue<bool> Selected
-        {
-            get
-            {
-                return this._selected;
-            }
-            set
-            {
-                this._selected = value;
-            }
-        }
 
         public virtual SourceType Type
         {
@@ -190,22 +120,22 @@ namespace DCDC_Manager
         }
 
 
-        public override void read()
+        new public virtual void read()
         {
             throw new System.NotImplementedException();
         }
 
-        public override void write()
+        new public virtual void write()
         {
             throw new System.NotImplementedException();
         }
 
-        public override string getReadQuery()
+        new public virtual string getReadQuery()
         {
             throw new System.NotImplementedException();
         }
 
-        public override string getWriteQuery()
+        new public virtual string getWriteQuery()
         {
             throw new System.NotImplementedException();
         }
