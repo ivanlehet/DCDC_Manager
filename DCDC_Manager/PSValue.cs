@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -11,18 +12,18 @@ namespace DCDC_Manager
     {
         private T _value;
         private double _timeStamp=0.0;
-
-    
+   
 
         public override string ToString()
         {
-
+            Debug.WriteLine(this.GetType().Name+"\ttoString()\tInvoked");
      
             if(_value.GetType() == typeof(double))
             {
-                return String.Format("{0:F3}",this._value.ToString());
+                Debug.WriteLine(this.GetType().Name + "\ttoString()\tReturning formated double "+ string.Format("{0:F3}", this._value));
+                return string.Format("{0:F3}",this._value);
             }
-
+            Debug.WriteLine(this.GetType().Name + "\ttoString()\tReturning base method");
             return base.ToString();
        
         }

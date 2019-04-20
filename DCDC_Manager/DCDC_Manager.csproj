@@ -64,6 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Battery.cs" />
+    <Compile Include="decimalNumericUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="decimalNumericUpDown.Designer.cs">
+      <DependentUpon>decimalNumericUpDown.cs</DependentUpon>
+    </Compile>
     <Compile Include="DesiredProperties.cs" />
     <Compile Include="ICommonProperties.cs" />
     <Compile Include="IOutput.cs" />
@@ -104,6 +110,9 @@
     <Compile Include="Source.cs" />
     <Compile Include="WatchDog.cs" />
     <Compile Include="WiFi.cs" />
+    <EmbeddedResource Include="decimalNumericUpDown.resx">
+      <DependentUpon>decimalNumericUpDown.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +183,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Double-J-Design-Super-Mono-3d-Battery.ico" />
+    <None Include="Resources\Arrows-Up-icon.png" />
+    <None Include="Resources\Arrows-Down-icon.png" />
+    <None Include="Resources\arrow-icon.png" />
     <None Include="Resources\Users-Exit-icon.png" />
     <None Include="Resources\settings-icon.png" />
     <None Include="Resources\settings-file-icon.png" />

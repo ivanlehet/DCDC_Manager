@@ -36,7 +36,7 @@ namespace DCDC_Manager
          
 
             InitializeComponent();
-            outputPanelContainer1.RealVoltage= Voltage;
+          
             device_serial.NewLine = "\r";
             out1MainChartTitleTb.TextChanged += Out1MainChartTitleTb_TextChanged;
             /*
@@ -674,8 +674,11 @@ namespace DCDC_Manager
 
             Voltage =  out1MainRealVtgLbl.Text;
             props.Voltage.Value = ComputeSquarePoint(time, 30, 0.2, 17);
+            props.Voltage.TimeStamp = time;
+            props.Current.TimeStamp = time;
+            props.Current.Value = ComputeSquarePoint(time + Math.PI / 2, 3, 0.2, 8);
 
-            outputPanelContainer1.Real = props;
+            outputPanelContainer1.Real=props;
 
         //this.outputPanelContainer1.realVoltage.Text = ;
 
